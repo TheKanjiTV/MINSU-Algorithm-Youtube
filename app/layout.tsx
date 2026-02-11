@@ -1,19 +1,16 @@
-
 import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
-import "./env" // Import environment variables
 import { ClerkProvider } from "@clerk/nextjs"
 import { Analytics } from "@vercel/analytics/next"
+
 const inter = Inter({ subsets: ["latin"] })
 
-
 export const metadata: Metadata = {
-  title: "YouTube Learning Platform",
-  description: "Learn from YouTube playlists like a structured course",
-    generator: 'anurag'
+  title: "YTLearn - Learn from YouTube, without distractions",
+  description: "Save YouTube playlists, track progress, take notes, and learn distraction-free",
 }
 
 export default function RootLayout({
@@ -21,24 +18,19 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
-  const themeClass="dark"
   return (
-    <ClerkProvider>
-      <html lang="en" className={themeClass} suppressHydrationWarning>
+    <ClerkProvider signInFallbackRedirectUrl="/dashboard" signUpFallbackRedirectUrl="/dashboard">
+      <html lang="en" suppressHydrationWarning>
         <head>
           <link rel="icon" href="/logo.png" />
         </head>
-        
         <body className={inter.className}>
-        
-          
-          <ThemeProvider attribute="class" defaultTheme="dark">
+          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             {children}
-            <Analytics/>
+            <Analytics />
           </ThemeProvider>
         </body>
       </html>
     </ClerkProvider>
-    
   )
 }
