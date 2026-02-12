@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { useEffect, useState, useCallback } from "react"
 import { useUser } from "@clerk/nextjs"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
@@ -17,12 +17,25 @@ export default function ProfilePage() {
   const [stats, setStats] = useState<LearningStats | null>(null)
   const [dailyCompletions, setDailyCompletions] = useState<DailyCompletions>({})
 
-  useEffect(() => {
+  const refresh = useCallback(() => {
     setLibrary(getLibrary())
     setStats(getStats())
     backfillDailyCompletions()
     setDailyCompletions(getDailyCompletions())
   }, [])
+
+  useEffect(() => {
+    refresh()
+    const handleVisibility = () => {
+      if (document.visibilityState === "visible") refresh()
+    }
+    document.addEventListener("visibilitychange", handleVisibility)
+    window.addEventListener("focus", refresh)
+    return () => {
+      document.removeEventListener("visibilitychange", handleVisibility)
+      window.removeEventListener("focus", refresh)
+    }
+  }, [refresh])
 
   if (!user) return null
 
