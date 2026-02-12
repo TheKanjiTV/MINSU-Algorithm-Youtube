@@ -6,6 +6,7 @@ import type {
   ActivityType,
   UserSettings,
   LearningStats,
+  DailyCompletions,
 } from "./types"
 
 // ── Keys ──
@@ -19,6 +20,7 @@ const KEYS = {
   streak: "ytlearn_streak",
   migrated: "ytlearn_migrated",
   videoPositions: "ytlearn_video_positions",
+  dailyCompletions: "ytlearn_daily_completions",
 } as const
 
 // ── Helpers ──
@@ -80,8 +82,10 @@ export function toggleVideoComplete(playlistId: string, videoId: string) {
   const completed = new Set(playlist.completedVideoIds)
   if (completed.has(videoId)) {
     completed.delete(videoId)
+    decrementDailyCompletion()
   } else {
     completed.add(videoId)
+    incrementDailyCompletion()
     logActivity("video_completed", `Video in ${playlist.title}`, playlistId, videoId)
   }
   playlist.completedVideoIds = Array.from(completed)
@@ -337,6 +341,46 @@ export function getEffectiveCounts(playlist: LibraryPlaylist) {
   const completedActive = playlist.completedVideoIds.filter((id) => !skipped.has(id)).length
   const progress = totalActive > 0 ? Math.round((completedActive / totalActive) * 100) : 0
   return { totalActive, completedActive, progress }
+}
+
+// ── Daily Completions ──
+
+export function getDailyCompletions(): DailyCompletions {
+  return get<DailyCompletions>(KEYS.dailyCompletions, {})
+}
+
+function incrementDailyCompletion() {
+  const data = getDailyCompletions()
+  const today = todayStr()
+  data[today] = (data[today] || 0) + 1
+  set(KEYS.dailyCompletions, data)
+}
+
+function decrementDailyCompletion() {
+  const data = getDailyCompletions()
+  const today = todayStr()
+  if (data[today] && data[today] > 0) {
+    data[today] -= 1
+    if (data[today] === 0) delete data[today]
+    set(KEYS.dailyCompletions, data)
+  }
+}
+
+export function backfillDailyCompletions() {
+  const data = getDailyCompletions()
+  if (Object.keys(data).length > 0) return // already has data, skip backfill
+
+  const events = get<ActivityEvent[]>(KEYS.activity, [])
+  const counts: DailyCompletions = {}
+  for (const event of events) {
+    if (event.type === "video_completed") {
+      const day = event.timestamp.slice(0, 10)
+      counts[day] = (counts[day] || 0) + 1
+    }
+  }
+  if (Object.keys(counts).length > 0) {
+    set(KEYS.dailyCompletions, counts)
+  }
 }
 
 // ── Migration from old format ──

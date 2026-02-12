@@ -71,6 +71,10 @@ export interface UserSettings {
   autoAdvance: boolean
 }
 
+// ── Daily Completions ──
+
+export type DailyCompletions = Record<string, number> // "YYYY-MM-DD" → count
+
 // ── Stats ──
 
 export interface LearningStats {

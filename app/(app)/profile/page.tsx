@@ -5,8 +5,9 @@ import { useUser } from "@clerk/nextjs"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Progress } from "@/components/ui/progress"
-import { getLibrary, getStats } from "@/lib/storage"
-import type { LibraryPlaylist, LearningStats } from "@/lib/types"
+import { getLibrary, getStats, getDailyCompletions, backfillDailyCompletions } from "@/lib/storage"
+import type { LibraryPlaylist, LearningStats, DailyCompletions } from "@/lib/types"
+import { ContributionGraph } from "@/components/contribution-graph"
 import { BookOpen, CheckCircle2, Flame, TrendingUp } from "lucide-react"
 import Link from "next/link"
 
@@ -14,10 +15,13 @@ export default function ProfilePage() {
   const { user } = useUser()
   const [library, setLibrary] = useState<LibraryPlaylist[]>([])
   const [stats, setStats] = useState<LearningStats | null>(null)
+  const [dailyCompletions, setDailyCompletions] = useState<DailyCompletions>({})
 
   useEffect(() => {
     setLibrary(getLibrary())
     setStats(getStats())
+    backfillDailyCompletions()
+    setDailyCompletions(getDailyCompletions())
   }, [])
 
   if (!user) return null
@@ -80,6 +84,9 @@ export default function ProfilePage() {
           </Card>
         </div>
       )}
+
+      {/* Contribution Graph */}
+      <ContributionGraph data={dailyCompletions} />
 
       {/* All playlists */}
       <Card>
