@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Learning Marketplace UI</title>
+  <link rel="stylesheet" href="/inserts/style.css"/>
+</head>
+<body class="page-home">
+  <header class="top">
+    <div class="top__inner">
+      <a class="brand" href="#">
+        <!-- brand logo -->
+        <span class="brand__mark">M</span>
+        <span class="brand__text"></span>
+      </a>
+
+      <div class="explore-wrap">
+        <button class="pill pill--ghost top__explore" type="button" id="btnExplore" aria-haspopup="true" aria-expanded="false">
+          Explore
+        </button>
+        <div class="explore-menu" id="exploreMenu" aria-hidden="true">
+          <div class="explore-menu__inner">
+            <div class="explore-col explore-col--left">
+              <div class="explore-group">
+                <div class="explore-title">Explore by Goal</div>
+                <ul class="explore-list" id="exploreGoals"></ul>
+              </div>
+              <div class="explore-group">
+                <div class="explore-title">Browse categories</div>
+                <ul class="explore-list" id="exploreCategories"></ul>
+              </div>
+            </div>
+            <div class="explore-col">
+              <div class="explore-title" id="exploreSubTitle"></div>
+              <ul class="explore-list" id="exploreSubcats"></ul>
+            </div>
+            <div class="explore-col">
+              <div class="explore-title">Popular topics</div>
+              <ul class="explore-list" id="exploreTopics"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="search" role="search">
+        <span class="search__icon" aria-hidden="true">⌕</span>
+        <input id="searchInput" class="search__input" type="search" placeholder="Search for anything" />
+        <button id="searchBtn" class="search__btn" type="button">Search</button>
+      </div>
+
+      <nav class="top__nav" aria-label="Top links">
+        <a href="/dashboard" target="_top" class="link">Dashboard</a>
+        <a href="/library" target="_top" class="link">Library</a>
+        <a href="/notes" target="_top" class="link">Notes</a>
+      </nav>
+
+      <div class="top__icons" aria-label="Actions">
+        <button class="iconbtn" type="button" title="Wishlist" aria-label="Wishlist">♡</button>
+        <button class="iconbtn" type="button" title="Cart" aria-label="Cart">
+          🛒 <span class="badge" id="cartCount">10</span>
+        </button>
+        <button class="iconbtn" type="button" title="Notifications" aria-label="Notifications">🔔</button>
+        <button class="avatar" type="button" aria-label="Profile">KY</button>
+      </div>
+    </div>
+    
+    <div class="cats" aria-label="Categories">
+      <div class="cats__inner">
+        <a class="cats__item" href="/courses/education/learning-strategies" target="_top">Education</a>
+        <a class="cats__item" href="/courses/business/entpreneurship" target="_top">Business</a>
+        <a class="cats__item" href="/courses/accounting-and-finance/bookkeeping" target="_top">Accounting &amp; Finance</a>
+        <a class="cats__item" href="/courses/it-and-software/networking" target="_top">IT &amp; Software</a>
+        <a class="cats__item" href="/courses/design/ui-ux-design" target="_top">Design</a>
+        <a class="cats__item" href="/courses/office-productivity/time-management" target="_top">Office Productivity</a>
+        <a class="cats__item" href="/courses/marketing/digital-marketing" target="_top">Marketing</a>
+        <a class="cats__item" href="/courses/development/web-development" target="_top">Development</a>
+        <a class="cats__item" href="/courses/health-and-fitness/nutrition" target="_top">Health &amp; Fitness</a>
+        <a class="cats__item" href="/courses/music/music-production" target="_top">Music</a>
+      </div>
+      <div class="cat-menu" id="catMenu" aria-hidden="true">
+        <div class="cat-menu__inner" id="catMenuInner"></div>
+      </div>
+    </div>
+
+  </header>
+
+  <main class="page">
+    <section class="welcome">
+      <div class="welcome__inner">
+        <div class="welcome__left">
+          <div class="avatar avatar--big" aria-hidden="true">KY</div>
+          <div>
+            <h1 class="h1">Welcome back, $user</h1>
+            <button class="subtle subtle-btn" id="addInterestsBtn" type="button">Add Interests</button>
+            <div class="subtle subtle--summary" id="interestsSummary">No interests selected yet.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero" aria-label="Hero carousel">
+      <div class="hero__inner">
+        <button class="circle" id="heroPrev" type="button" aria-label="Previous">‹</button>
+
+        <div class="hero__stage">
+          <div class="hero__slide" id="heroSlide" role="group" aria-roledescription="slide">
+            <div class="hero__card">
+              <h2 class="hero__title" id="heroTitle">Find your Course</h2>
+              <p class="hero__text" id="heroText">
+                Browse short previews. Pick a path. Start learning.
+              </p>
+            </div>
+
+            <div class="hero__art" aria-hidden="true"></div>
+          </div>
+
+          <div class="hero__dots" id="heroDots" aria-label="Slide indicators"></div>
+        </div>
+
+        <button class="circle" id="heroNext" type="button" aria-label="Next">›</button>
+      </div>
+
+      <div class="banner" id="bizBanner" role="region" aria-label="Promo banner">
+        <div class="banner__inner">
+          <div class="banner__text">
+            Training 2 or more people? Get team access to top courses.
+          </div>
+          <div class="banner__actions">
+            <button class="pill" type="button">Get Team</button>
+            <button class="pill pill--ghost" id="dismissBanner" type="button">Dismiss</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="block__head">
+        <h2 class="h2">What to learn next</h2>
+        <div class="muted">Recommended for you</div>
+      </div>
+
+    <div class="row">
+        <button class="row__nav" data-row="rec" data-dir="-1" type="button" aria-label="Scroll left">‹</button>
+        <div class="cards" id="row-rec">
+        <!-- Cards injected by app.js -->
+    </div>
+        <button class="row__nav" data-row="rec" data-dir="1" type="button" aria-label="Scroll right">›</button>
+    </div>
+    </section>
+
+    <section class="block">
+      <div class="block__head">
+        <h2 class="h2">Based on your recent searches</h2>
+      </div>
+
+    <div class="row">
+        <button class="row__nav" data-row="recent" data-dir="-1" type="button" aria-label="Scroll left">‹</button>
+        <div class="cards" id="row-recent">
+        <!-- Cards injected by app.js -->
+    </div>
+        <button class="row__nav" data-row="recent" data-dir="1" type="button" aria-label="Scroll right">›</button>
+    </div>
+    </section>
+
+    <section class="block">
+      <div class="block__head">
+        <h2 class="h2">Trending courses</h2>
+      </div>
+
+    <div class="row">
+        <button class="row__nav" data-row="trend" data-dir="-1" type="button" aria-label="Scroll left">‹</button>
+        <div class="cards" id="row-trend">
+        <!-- Cards injected by app.js -->
+    </div>
+        <button class="row__nav" data-row="trend" data-dir="1" type="button" aria-label="Scroll right">›</button>
+    </div>
+    </section>
+
+    <section class="block">
+      <div class="block__head">
+        <h2 class="h2">Topics recommended for you</h2>
+      </div>
+
+      <div class="chips" id="topicChips"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__cta">
+        <div class="footer__ctaTitle">Teach the world online</div>
+        <div class="footer__ctaText">Create a course, reach learners, earn.</div>
+      </div>
+      <button class="pill footer__btn" type="button">Teach</button>
+    </div>
+
+    <div class="footer__grid">
+      <div class="footer__col">
+        <div class="footer__h">In-demand Careers</div>
+        <a href="#" class="footer__a">Data Scientist</a>
+        <a href="#" class="footer__a">Full Stack Web Developer</a>
+        <a href="#" class="footer__a">Cloud Engineer</a>
+        <a href="#" class="footer__a">Project Manager</a>
+        <a href="#" class="footer__a">Game Developer</a>
+      </div>
+
+      <div class="footer__col">
+        <div class="footer__h">Web Development</div>
+        <a href="#" class="footer__a">JavaScript</a>
+        <a href="#" class="footer__a">React</a>
+        <a href="#" class="footer__a">Node.js</a>
+        <a href="#" class="footer__a">Python</a>
+        <a href="#" class="footer__a">Django</a>
+      </div>
+
+      <div class="footer__col">
+        <div class="footer__h">IT Certifications</div>
+        <a href="#" class="footer__a">AWS</a>
+        <a href="#" class="footer__a">Azure Fundamentals</a>
+        <a href="#" class="footer__a">Kubernetes</a>
+        <a href="#" class="footer__a">Security+</a>
+      </div>
+
+      <div class="footer__col">
+        <div class="footer__h">Business Analytics</div>
+        <a href="#" class="footer__a">Excel</a>
+        <a href="#" class="footer__a">SQL</a>
+        <a href="#" class="footer__a">Power BI</a>
+        <a href="#" class="footer__a">Data Analysis</a>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="brand brand--footer">
+        <span class="brand__mark">M</span>
+        <span class="brand__text"></span>
+      </div>
+      <div class="footer__meta">© 2026 Your Project UI</div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <div class="interests-modal" id="interestsModal" aria-hidden="true">
+    <div class="interests-modal__overlay" id="interestsOverlay"></div>
+    <section class="interests-modal__panel" role="dialog" aria-modal="true" aria-labelledby="interestsTitle">
+      <div class="interests-modal__head">
+        <h3 id="interestsTitle">Add Interests</h3>
+        <button class="interests-modal__close" id="interestsClose" type="button" aria-label="Close">×</button>
+      </div>
+      <p class="interests-modal__desc" id="interestsDesc">Pick courses/topics you like. This will update your Recommended for you playlists.</p>
+
+      <div class="interests-grid">
+        <div class="interests-group">
+          <div class="interests-group__title" id="interestsCoursesLabel">Courses</div>
+          <div class="interests-list" id="interestCategories"></div>
+        </div>
+        <div class="interests-group">
+          <div class="interests-group__title" id="interestsTopicsLabel">Topics</div>
+          <div class="interests-list" id="interestTopics"></div>
+        </div>
+      </div>
+
+      <label class="interests-check">
+        <input type="checkbox" id="interestNone" />
+        <span id="interestsNoneLabel">None</span>
+      </label>
+
+      <label class="interests-inputWrap" for="interestCustom">
+        <span id="interestsCustomLabel">Type Here Your Interests/Hobby</span>
+        <input id="interestCustom" type="text" maxlength="120" placeholder="e.g. coding, music, design" />
+      </label>
+
+      <div class="interests-modal__actions">
+        <button class="pill pill--ghost" id="interestsCancel" type="button">Cancel</button>
+        <button class="pill" id="interestsSave" type="button">Save Interests</button>
+      </div>
+    </section>
+  </div>
+
+  <script src="/inserts/app.js"></script>
+</body>
+</html>

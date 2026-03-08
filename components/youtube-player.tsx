@@ -4,6 +4,7 @@ import { useEffect, useRef, useCallback, useImperativeHandle, forwardRef } from 
 
 export interface YouTubePlayerHandle {
   getCurrentTime: () => number
+  getDuration: () => number
   seekTo: (seconds: number) => void
 }
 
@@ -21,11 +22,33 @@ export const YouTubePlayer = forwardRef<YouTubePlayerHandle, YouTubePlayerProps>
     const containerRef = useRef<HTMLDivElement>(null)
     const currentVideoId = useRef(videoId)
     const timeInterval = useRef<ReturnType<typeof setInterval> | null>(null)
+    const onEndedRef = useRef(onEnded)
+    const onTimeUpdateRef = useRef(onTimeUpdate)
+    const playbackSpeedRef = useRef(playbackSpeed)
+
+    useEffect(() => {
+      onEndedRef.current = onEnded
+    }, [onEnded])
+
+    useEffect(() => {
+      onTimeUpdateRef.current = onTimeUpdate
+    }, [onTimeUpdate])
+
+    useEffect(() => {
+      playbackSpeedRef.current = playbackSpeed
+    }, [playbackSpeed])
 
     useImperativeHandle(ref, () => ({
       getCurrentTime: () => {
         try {
           return playerRef.current?.getCurrentTime() || 0
+        } catch {
+          return 0
+        }
+      },
+      getDuration: () => {
+        try {
+          return playerRef.current?.getDuration() || 0
         } catch {
           return 0
         }
@@ -48,13 +71,13 @@ export const YouTubePlayer = forwardRef<YouTubePlayerHandle, YouTubePlayerProps>
             const state = playerRef.current.getPlayerState()
             if (state === 1) {
               // PLAYING
-              onTimeUpdate?.(playerRef.current.getCurrentTime())
+              onTimeUpdateRef.current?.(playerRef.current.getCurrentTime())
             }
           } catch {
             // ignore
           }
         }
-      }, 5000) // save every 5 seconds
+      }, 1000) // report every 1 second for accurate watch validation
     }
 
     function stopTimeTracking() {
@@ -67,10 +90,7 @@ export const YouTubePlayer = forwardRef<YouTubePlayerHandle, YouTubePlayerProps>
     const initPlayer = useCallback(() => {
       if (!containerRef.current || !window.YT?.Player) return
 
-      if (playerRef.current) {
-        playerRef.current.destroy()
-        playerRef.current = null
-      }
+      if (playerRef.current) return
 
       playerRef.current = new window.YT.Player(containerRef.current, {
         videoId: currentVideoId.current,
@@ -87,12 +107,12 @@ export const YouTubePlayer = forwardRef<YouTubePlayerHandle, YouTubePlayerProps>
         },
         events: {
           onReady: (event) => {
-            event.target.setPlaybackRate(playbackSpeed)
+            event.target.setPlaybackRate(playbackSpeedRef.current)
             startTimeTracking()
           },
           onStateChange: (event) => {
             if (event.data === 0) {
-              onEnded?.()
+              onEndedRef.current?.()
             }
             if (event.data === 1) {
               startTimeTracking()
@@ -100,7 +120,7 @@ export const YouTubePlayer = forwardRef<YouTubePlayerHandle, YouTubePlayerProps>
             if (event.data === 2 || event.data === 0) {
               // PAUSED or ENDED - save position immediately
               try {
-                onTimeUpdate?.(event.target.getCurrentTime())
+                onTimeUpdateRef.current?.(event.target.getCurrentTime())
               } catch {
                 // ignore
               }
@@ -108,8 +128,7 @@ export const YouTubePlayer = forwardRef<YouTubePlayerHandle, YouTubePlayerProps>
           },
         },
       })
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [onEnded, playbackSpeed, startAt])
+    }, [])
 
     // Load YouTube IFrame API
     useEffect(() => {
@@ -149,12 +168,12 @@ export const YouTubePlayer = forwardRef<YouTubePlayerHandle, YouTubePlayerProps>
           } else {
             ;(playerRef.current as any).loadVideoById(videoId)
           }
-          playerRef.current.setPlaybackRate(playbackSpeed)
+          playerRef.current.setPlaybackRate(playbackSpeedRef.current)
         } catch {
           initPlayer()
         }
       }
-    }, [videoId, initPlayer, playbackSpeed, startAt])
+    }, [videoId, initPlayer, startAt])
 
     // Handle playback speed change
     useEffect(() => {

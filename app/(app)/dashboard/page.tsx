@@ -2,11 +2,14 @@
 
 import { useEffect, useState } from "react"
 import Link from "next/link"
-import { useUser } from "@clerk/nextjs"
+import { useSession } from "next-auth/react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Progress } from "@/components/ui/progress"
 import { AddPlaylistDialog } from "@/components/add-playlist-dialog"
+import { ProfessorQuizAnalytics } from "@/components/professor-quiz-analytics"
+import { ProfessorTeamsPanel, StudentTeamsPanel } from "@/components/dashboard-teams"
+import { StudentQuizInsights } from "@/components/student-quiz-insights"
 import { EmptyState } from "@/components/empty-state"
 import {
   getLibrary,
@@ -26,7 +29,9 @@ import {
 } from "lucide-react"
 
 export default function DashboardPage() {
-  const { user } = useUser()
+  const { data: session } = useSession()
+  const user = session?.user
+  const isProfessor = user?.role === "professor"
   const [library, setLibrary] = useState<LibraryPlaylist[]>([])
   const [stats, setStats] = useState<LearningStats | null>(null)
   const [activity, setActivity] = useState<ActivityEvent[]>([])
@@ -42,26 +47,27 @@ export default function DashboardPage() {
     refresh()
   }, [])
 
-  // Find the most recently watched playlist
   const continuePlaylist = library
     .filter((p) => p.lastWatchedAt)
-    .sort((a, b) => (b.lastWatchedAt || "").localeCompare(a.lastWatchedAt || ""))
-    [0]
+    .sort((a, b) => (b.lastWatchedAt || "").localeCompare(a.lastWatchedAt || ""))[0]
 
   const topPlaylists = library.slice(0, 4)
 
   return (
     <div className="container px-4 py-6 space-y-6">
-      {/* Welcome */}
       <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
         <div>
           <h1 className="text-2xl font-bold">
-            Welcome back{user?.firstName ? `, ${user.firstName}` : ""}
+            Welcome back{user?.name ? `, ${user.name.split(" ")[0]}` : ""}
           </h1>
-          <p className="text-muted-foreground text-sm">Pick up where you left off</p>
+          <p className="text-muted-foreground text-sm">
+            {isProfessor ? "Manage your teams and assessments." : "Pick up where you left off"}
+          </p>
         </div>
-        <AddPlaylistDialog onAdded={refresh} />
+        {isProfessor ? <AddPlaylistDialog onAdded={refresh} /> : null}
       </div>
+
+      {isProfessor ? <ProfessorTeamsPanel /> : <StudentTeamsPanel />}
 
       {library.length === 0 ? (
         <EmptyState
@@ -69,11 +75,10 @@ export default function DashboardPage() {
           title="Get started"
           description="Add your first YouTube playlist to begin learning distraction-free."
         >
-          <AddPlaylistDialog onAdded={refresh} />
+          {isProfessor ? <AddPlaylistDialog onAdded={refresh} /> : null}
         </EmptyState>
       ) : (
         <>
-          {/* Continue Learning */}
           {continuePlaylist && (
             <Card>
               <CardHeader className="pb-3">
@@ -110,7 +115,6 @@ export default function DashboardPage() {
             </Card>
           )}
 
-          {/* Stats grid */}
           {stats && (
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
               <Card>
@@ -160,9 +164,7 @@ export default function DashboardPage() {
             </div>
           )}
 
-          {/* Recent Activity + Playlists */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            {/* Activity */}
             <Card>
               <CardHeader className="pb-3">
                 <CardTitle className="text-base flex items-center gap-2">
@@ -197,7 +199,6 @@ export default function DashboardPage() {
               </CardContent>
             </Card>
 
-            {/* Playlists preview */}
             <Card>
               <CardHeader className="pb-3 flex flex-row items-center justify-between">
                 <CardTitle className="text-base">Your Playlists</CardTitle>
@@ -232,6 +233,9 @@ export default function DashboardPage() {
           </div>
         </>
       )}
+
+      {isProfessor ? <ProfessorQuizAnalytics /> : null}
+      {!isProfessor ? <StudentQuizInsights /> : null}
     </div>
   )
 }

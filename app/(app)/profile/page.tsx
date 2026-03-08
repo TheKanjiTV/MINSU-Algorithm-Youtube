@@ -1,18 +1,21 @@
 "use client"
 
 import { useEffect, useState, useCallback } from "react"
-import { useUser } from "@clerk/nextjs"
+import { useSession } from "next-auth/react"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Progress } from "@/components/ui/progress"
 import { getLibrary, getStats, getDailyCompletions } from "@/lib/storage"
 import type { LibraryPlaylist, LearningStats, DailyCompletions } from "@/lib/types"
 import { ContributionGraph } from "@/components/contribution-graph"
+import { ProfessorQuizAnalytics } from "@/components/professor-quiz-analytics"
+import { StudentQuizInsights } from "@/components/student-quiz-insights"
 import { BookOpen, CheckCircle2, Flame, TrendingUp } from "lucide-react"
 import Link from "next/link"
 
 export default function ProfilePage() {
-  const { user } = useUser()
+  const { data: session } = useSession()
+  const user = session?.user
   const [library, setLibrary] = useState<LibraryPlaylist[]>([])
   const [stats, setStats] = useState<LearningStats | null>(null)
   const [dailyCompletions, setDailyCompletions] = useState<DailyCompletions>({})
@@ -25,20 +28,15 @@ export default function ProfilePage() {
 
   useEffect(() => {
     refresh()
-    const handleVisibility = () => {
-      if (document.visibilityState === "visible") refresh()
-    }
-    document.addEventListener("visibilitychange", handleVisibility)
-    window.addEventListener("focus", refresh)
-    return () => {
-      document.removeEventListener("visibilitychange", handleVisibility)
-      window.removeEventListener("focus", refresh)
-    }
+    const onStorage = () => refresh()
+    window.addEventListener("ytlearn:storage", onStorage as EventListener)
+    return () => window.removeEventListener("ytlearn:storage", onStorage as EventListener)
   }, [refresh])
 
   if (!user) return null
 
-  const initials = user.firstName?.charAt(0) || user.username?.charAt(0) || "U"
+  const initials = user.name?.charAt(0) || user.email?.charAt(0) || "U"
+  const isProfessor = user.role === "professor"
 
   return (
     <div className="container px-4 py-6 max-w-3xl">
@@ -47,22 +45,22 @@ export default function ProfilePage() {
         <CardContent className="p-6">
           <div className="flex items-center gap-4">
             <Avatar className="h-16 w-16">
-              <AvatarImage src={user.imageUrl} alt={user.fullName || ""} />
+              <AvatarImage src={user.image || ""} alt={user.name || ""} />
               <AvatarFallback className="text-lg">{initials}</AvatarFallback>
             </Avatar>
             <div>
-              <h1 className="text-xl font-bold">{user.fullName || "User"}</h1>
-              <p className="text-sm text-muted-foreground">
-                {user.primaryEmailAddress?.emailAddress}
-              </p>
-              <p className="text-xs text-muted-foreground mt-1">
-                Member since {user.createdAt ? new Date(user.createdAt).toLocaleDateString() : "N/A"}
-              </p>
+              <h1 className="text-xl font-bold">{user.name || "User"}</h1>
+              <p className="text-sm text-muted-foreground">{user.email}</p>
+              <p className="text-xs text-muted-foreground mt-1">Member since N/A</p>
             </div>
           </div>
         </CardContent>
       </Card>
 
+      {isProfessor ? (
+        <ProfessorQuizAnalytics />
+      ) : (
+        <>
       {/* Stats */}
       {stats && (
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
@@ -134,6 +132,11 @@ export default function ProfilePage() {
           )}
         </CardContent>
       </Card>
+      <div className="mt-6">
+        <StudentQuizInsights />
+      </div>
+        </>
+      )}
     </div>
   )
 }

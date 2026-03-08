@@ -16,6 +16,10 @@ interface WatchSidebarProps {
   onSelectVideo: (videoId: string) => void
   onToggleComplete: (videoId: string) => void
   onToggleSkip: (videoId: string) => void
+  canManualComplete: boolean
+  manualCompleteMessage?: string
+  showStartQuiz: boolean
+  onStartQuiz: () => void
 }
 
 export function WatchSidebar({
@@ -24,6 +28,10 @@ export function WatchSidebar({
   onSelectVideo,
   onToggleComplete,
   onToggleSkip,
+  canManualComplete,
+  manualCompleteMessage,
+  showStartQuiz,
+  onStartQuiz,
 }: WatchSidebarProps) {
   const [search, setSearch] = useState("")
 
@@ -46,12 +54,22 @@ export function WatchSidebar({
           </span>
           <span className="text-muted-foreground text-xs">{timeLeft}</span>
         </div>
+        {!canManualComplete ? (
+          <p className="text-[11px] text-muted-foreground">
+            {manualCompleteMessage || "Videos auto-complete after valid full watch."}
+          </p>
+        ) : null}
         <div className="w-full h-1.5 bg-muted rounded-full overflow-hidden">
           <div
             className="h-full bg-primary transition-all duration-300"
             style={{ width: `${progress}%` }}
           />
         </div>
+        {showStartQuiz ? (
+          <Button type="button" size="sm" className="w-full" onClick={onStartQuiz}>
+            Start Quiz
+          </Button>
+        ) : null}
         <div className="relative">
           <Search className="absolute left-2.5 top-1/2 -translate-y-1/2 h-3.5 w-3.5 text-muted-foreground" />
           <Input
@@ -84,7 +102,11 @@ export function WatchSidebar({
                 {!isSkipped ? (
                   <Checkbox
                     checked={isCompleted}
-                    onCheckedChange={() => onToggleComplete(video.id)}
+                    disabled={!canManualComplete}
+                    onCheckedChange={() => {
+                      if (!canManualComplete) return
+                      onToggleComplete(video.id)
+                    }}
                     onClick={(e) => e.stopPropagation()}
                     className="mt-0.5 shrink-0"
                   />

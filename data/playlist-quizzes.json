@@ -1,0 +1,2245 @@
+{
+  "__meta__": {
+    "version": 3,
+    "prebuiltAt": "2026-02-22T08:27:54.713Z"
+  },
+  "__global__": {
+    "PLXC_gcsKLD6n7p6tHPBxsKjN5hA_quaPI": [
+      {
+        "id": "j6Ule7GXaRs-topic-1",
+        "question": "In video 1, what is the main topic?",
+        "options": [
+          "PHOTO EDITING 101 FOR WEB DESIGNERS",
+          "USING THE RIGHT IMAGE FOR YOUR WEB DESIGN",
+          "Learn Web Design For Beginners",
+          "3 Psychology Principles Every Web Designer Must know"
+        ],
+        "answerIndex": 2,
+        "explanation": "Video 1 is \"Learn Web Design For Beginners - Full Course\", which focuses on \"Learn Web Design For Beginners\"."
+      },
+      {
+        "id": "C72WkcUZvco-topic-2",
+        "question": "Which title best matches video 2?",
+        "options": [
+          "Introduction to Web Design",
+          "Free Web Design Course",
+          "HOW TO USE COLORS IN WEB DESIGN"
+        ],
+        "answerIndex": 0,
+        "explanation": "The best matching title for video 2 is \"FREE Web Design Course : Introduction to Web Design | Episode 1\"."
+      },
+      {
+        "id": "R_gFhRsWLMw-topic-3",
+        "question": "Video 3 in this playlist focuses on which concept?",
+        "options": [
+          "PHOTO EDITING 101 FOR WEB DESIGNERS",
+          "CREATING A GOOD HERO FOR YOUR WEBSITE",
+          "Learn Web Design For Beginners",
+          "BASIC WEB DESIGN SOFTWARE"
+        ],
+        "answerIndex": 3,
+        "explanation": "Video 3 focuses on \"BASIC WEB DESIGN SOFTWARE\" from \"BASIC WEB DESIGN SOFTWARE: Free Web Design Course | Episode 2\"."
+      },
+      {
+        "id": "mQeplLGXIY4-topic-4",
+        "question": "What is the likely lesson focus of playlist video 4?",
+        "options": [
+          "Learn Web Design For Beginners",
+          "BRIEF HISTORY OF WEB DESIGN",
+          "WEBSITE CONTENT STRUCTURE",
+          "Free Web Design Course Episode 19"
+        ],
+        "answerIndex": 1,
+        "explanation": "Playlist video 4 highlights \"BRIEF HISTORY OF WEB DESIGN\"."
+      },
+      {
+        "id": "OUp7ale49lI-topic-5",
+        "question": "In video 5, what is the main topic?",
+        "options": [
+          "USING WIREFRAMES IN WEB DESIGN",
+          "GETTING YOUR WEBSITE READY FOR DEVELOPMENT",
+          "Free Web Design Course",
+          "USING THE RIGHT IMAGE FOR YOUR WEB DESIGN"
+        ],
+        "answerIndex": 2,
+        "explanation": "Video 5 is \"INTRO TO TYPOGRAPHY: Free Web Design Course | Episode 4\", which focuses on \"Free Web Design Course\"."
+      },
+      {
+        "id": "BN8pC91rJaU-topic-6",
+        "question": "Which title best matches video 6?",
+        "options": [
+          "USING THE RIGHT IMAGE FOR YOUR WEB DESIGN",
+          "PHOTO EDITING 101 FOR WEB DESIGNERS",
+          "Free Web Design Course",
+          "USING WIREFRAMES IN WEB DESIGN"
+        ],
+        "answerIndex": 0,
+        "explanation": "The best matching title for video 6 is \"USING THE RIGHT IMAGE FOR YOUR WEB DESIGN: Free Web Design Course | Episode 5\"."
+      },
+      {
+        "id": "TDRhwSfxYkg-topic-7",
+        "question": "Video 7 in this playlist focuses on which concept?",
+        "options": [
+          "Free Web Design Course Episode 19",
+          "Free Web Design Course",
+          "BRIEF HISTORY OF WEB DESIGN",
+          "CREATING A GOOD HERO FOR YOUR WEBSITE"
+        ],
+        "answerIndex": 1,
+        "explanation": "Video 7 focuses on \"Free Web Design Course\" from \"INTRO TO LAYOUT: Free Web Design Course | Episode 6\"."
+      },
+      {
+        "id": "UuPt4RpV4Xc-topic-8",
+        "question": "What is the likely lesson focus of playlist video 8?",
+        "options": [
+          "HOW TO USE COLORS IN WEB DESIGN",
+          "USING WIREFRAMES IN WEB DESIGN",
+          "DESIGN A HOMEPAGE WITH ADOBE XD",
+          "USING THE RIGHT IMAGE FOR YOUR WEB DESIGN"
+        ],
+        "answerIndex": 0,
+        "explanation": "Playlist video 8 highlights \"HOW TO USE COLORS IN WEB DESIGN\"."
+      },
+      {
+        "id": "kOJ4c5THLQk-topic-9",
+        "question": "In video 9, what is the main topic?",
+        "options": [
+          "PHOTO EDITING 101 FOR WEB DESIGNERS",
+          "WHY HIERARCHY IS SO IMPORTANT IN WEB DESIGN",
+          "CREATING A GOOD HERO FOR YOUR WEBSITE",
+          "USING WIREFRAMES IN WEB DESIGN"
+        ],
+        "answerIndex": 1,
+        "explanation": "Video 9 is \"WHY HIERARCHY IS SO IMPORTANT IN WEB DESIGN: Free Web Design Course | Episode 8\", which focuses on \"WHY HIERARCHY IS SO IMPORTANT IN WEB DESIGN\"."
+      },
+      {
+        "id": "x3Yno9VUYBY-topic-10",
+        "question": "Which title best matches video 10?",
+        "options": [
+          "Introduction to Web Design",
+          "Learn Web Design For Beginners",
+          "USING WIREFRAMES IN WEB DESIGN",
+          "Free Web Design Course"
+        ],
+        "answerIndex": 2,
+        "explanation": "The best matching title for video 10 is \"USING WIREFRAMES IN WEB DESIGN: Free Web Design Course | Episode 9\"."
+      },
+      {
+        "id": "flAcHu-squc-topic-11",
+        "question": "Video 11 in this playlist focuses on which concept?",
+        "options": [
+          "CREATING A GOOD HERO FOR YOUR WEBSITE",
+          "How To Find Web Design Inspiration To Stand Out",
+          "USING WIREFRAMES IN WEB DESIGN",
+          "WEBSITE CONTENT STRUCTURE"
+        ],
+        "answerIndex": 0,
+        "explanation": "Video 11 focuses on \"CREATING A GOOD HERO FOR YOUR WEBSITE\" from \"CREATING A GOOD HERO FOR YOUR WEBSITE: Free Web Design Course | Episode 10\"."
+      },
+      {
+        "id": "8A6MxYNooYA-topic-12",
+        "question": "What is the likely lesson focus of playlist video 12?",
+        "options": [
+          "DESIGN A HOMEPAGE WITH ADOBE XD",
+          "WEBSITE CONTENT STRUCTURE",
+          "USING WIREFRAMES IN WEB DESIGN",
+          "Free Web Design Course"
+        ],
+        "answerIndex": 1,
+        "explanation": "Playlist video 12 highlights \"WEBSITE CONTENT STRUCTURE\"."
+      },
+      {
+        "id": "Cn2KgB_01mE-topic-13",
+        "question": "In video 13, what is the main topic?",
+        "options": [
+          "3 Psychology Principles Every Web Designer Must know",
+          "UX/UI BEST PRACTICES FOR WEB DESIGN",
+          "Free Web Design Course"
+        ],
+        "answerIndex": 1,
+        "explanation": "Video 13 is \"UX/UI BEST PRACTICES FOR WEB DESIGN: Free Web Design Course | Episode 12\", which focuses on \"UX/UI BEST PRACTICES FOR WEB DESIGN\"."
+      },
+      {
+        "id": "ZbQxX7v_dfo-topic-14",
+        "question": "Which title best matches video 14?",
+        "options": [
+          "PHOTO EDITING 101 FOR WEB DESIGNERS",
+          "Free Web Design Course",
+          "WEBSITE CONTENT STRUCTURE",
+          "BRIEF HISTORY OF WEB DESIGN"
+        ],
+        "answerIndex": 0,
+        "explanation": "The best matching title for video 14 is \"PHOTO EDITING 101 FOR WEB DESIGNERS: Free Web Design Course | Episode 13\"."
+      },
+      {
+        "id": "l5orEmE7Pq8-topic-15",
+        "question": "Video 15 in this playlist focuses on which concept?",
+        "options": [
+          "Free Web Design Course",
+          "DESIGN A HOMEPAGE WITH ADOBE XD",
+          "WHY HIERARCHY IS SO IMPORTANT IN WEB DESIGN",
+          "Introduction to Web Design"
+        ],
+        "answerIndex": 1,
+        "explanation": "Video 15 focuses on \"DESIGN A HOMEPAGE WITH ADOBE XD\" from \"DESIGN A HOMEPAGE WITH ADOBE XD: Free Web Design Course | Episode 14\"."
+      },
+      {
+        "id": "lQzmGrUQUDc-topic-16",
+        "question": "What is the likely lesson focus of playlist video 16?",
+        "options": [
+          "USING THE RIGHT IMAGE FOR YOUR WEB DESIGN",
+          "WHY HIERARCHY IS SO IMPORTANT IN WEB DESIGN",
+          "How To Find Web Design Inspiration To Stand Out",
+          "GETTING YOUR WEBSITE READY FOR DEVELOPMENT"
+        ],
+        "answerIndex": 3,
+        "explanation": "Playlist video 16 highlights \"GETTING YOUR WEBSITE READY FOR DEVELOPMENT\"."
+      },
+      {
+        "id": "ZliIs7jHi1s-topic-17",
+        "question": "In video 17, what is the main topic?",
+        "options": [
+          "WHY HIERARCHY IS SO IMPORTANT IN WEB DESIGN",
+          "Introduction to Web Design",
+          "Free Web Design Course Episode 19",
+          "5 Website Types & How To Design Them"
+        ],
+        "answerIndex": 3,
+        "explanation": "Video 17 is \"5 Website Types & How To Design Them | Free Web Design Course | Episode 16\", which focuses on \"5 Website Types & How To Design Them\"."
+      },
+      {
+        "id": "FYOxoJbngAM-topic-18",
+        "question": "Which title best matches video 18?",
+        "options": [
+          "Free Web Design Course",
+          "Introduction to Web Design",
+          "How To Find Web Design Inspiration To Stand Out",
+          "CREATING A GOOD HERO FOR YOUR WEBSITE"
+        ],
+        "answerIndex": 2,
+        "explanation": "The best matching title for video 18 is \"How To Find Web Design Inspiration To Stand Out | Free Web Design Course | Episode 17\"."
+      },
+      {
+        "id": "fqDTN24HQqg-topic-19",
+        "question": "Video 19 in this playlist focuses on which concept?",
+        "options": [
+          "WEBSITE CONTENT STRUCTURE",
+          "HOW TO USE COLORS IN WEB DESIGN",
+          "3 Psychology Principles Every Web Designer Must know",
+          "UX/UI BEST PRACTICES FOR WEB DESIGN"
+        ],
+        "answerIndex": 2,
+        "explanation": "Video 19 focuses on \"3 Psychology Principles Every Web Designer Must know\" from \"3 Psychology Principles Every Web Designer Must know | Free Web Design Course | Episode 18\"."
+      },
+      {
+        "id": "z2t6eRuwbFA-topic-20",
+        "question": "What is the likely lesson focus of playlist video 20?",
+        "options": [
+          "DESIGN A HOMEPAGE WITH ADOBE XD",
+          "Free Web Design Course Episode 19",
+          "GETTING YOUR WEBSITE READY FOR DEVELOPMENT",
+          "How To Find Web Design Inspiration To Stand Out"
+        ],
+        "answerIndex": 1,
+        "explanation": "Playlist video 20 highlights \"Free Web Design Course Episode 19\"."
+      }
+    ],
+    "PLYzt2_QLeO9U5aX8f_SAaE62nTMBwo1Z5": [
+      {
+        "id": "0-R7kCIeQAk-topic-1",
+        "question": "In video 1, what is the main topic?",
+        "options": [
+          "Lead Sound, MELODIC HOUSE & TECHNO",
+          "LUSH Noise Pad Tutorial",
+          "BRASS Lead Sound",
+          "CRAZY GOOD SOUND for Lead / Bass"
+        ],
+        "answerIndex": 3,
+        "explanation": "Video 1 is \"DIVA Tutorial | CRAZY GOOD SOUND for Lead / Bass\", which focuses on \"CRAZY GOOD SOUND for Lead / Bass\"."
+      },
+      {
+        "id": "y-o28_L_OVg-topic-2",
+        "question": "Which title best matches video 2?",
+        "options": [
+          "Dirty STAB, Melodic Techno",
+          "Mystic Arp, Melodic House & Techno",
+          "DONK Bass Sound, Afterlife Style",
+          "Franky Wah Pluck"
+        ],
+        "answerIndex": 2,
+        "explanation": "The best matching title for video 2 is \"DIVA Tutorial | DONK Bass Sound, Afterlife Style | Anyma, Innellea\"."
+      },
+      {
+        "id": "exx3osKythc-topic-3",
+        "question": "Video 3 in this playlist focuses on which concept?",
+        "options": [
+          "Melodic Techno Bass",
+          "Wonderful Pluck, Melodic House",
+          "Retro BASS Sound, Melodic House",
+          "BIG PLUCK LEAD, Melodic Techno"
+        ],
+        "answerIndex": 0,
+        "explanation": "Video 3 focuses on \"Melodic Techno Bass\" from \"DIVA Tutorial | Melodic Techno Bass | Stefan Bodzin Strand\"."
+      },
+      {
+        "id": "rqssqeix6P0-topic-4",
+        "question": "What is the likely lesson focus of playlist video 4?",
+        "options": [
+          "Detuned Lead Sound, Melodic Techno",
+          "Our Intro Song!",
+          "Arp for FAT Background",
+          "Melodic Techno Bass"
+        ],
+        "answerIndex": 1,
+        "explanation": "Playlist video 4 highlights \"Our Intro Song!\"."
+      },
+      {
+        "id": "1qaDYIgQwLU-topic-5",
+        "question": "In video 5, what is the main topic?",
+        "options": [
+          "DIRTY Organic BASS Tutorial",
+          "Melodic House Pluck Tutorial",
+          "BASS Sound for MELODIC TECHNO",
+          "LUSH Noise Pad Tutorial"
+        ],
+        "answerIndex": 0,
+        "explanation": "Video 5 is \"DIRTY Organic BASS Tutorial | HUGE Sound | Melodic Techno\", which focuses on \"DIRTY Organic BASS Tutorial\"."
+      },
+      {
+        "id": "fcQUt6PL9Pg-topic-6",
+        "question": "Which title best matches video 6?",
+        "options": [
+          "Wonderful Lead, Melodic House",
+          "LUSH Noise Pad Tutorial",
+          "SWEDISH HOUSE MAFIA BASS",
+          "80's Lead Sound, Melodic Techno"
+        ],
+        "answerIndex": 1,
+        "explanation": "The best matching title for video 6 is \"LUSH Noise Pad Tutorial | Melodic House | Diva | Ben Bohmer, Anjunadeep, Kidnap\"."
+      },
+      {
+        "id": "Dly1RJzkP6M-topic-7",
+        "question": "Video 7 in this playlist focuses on which concept?",
+        "options": [
+          "Detuned Lead Sound, Melodic Techno",
+          "Huge Pluck Sound, Melodic Techno & House",
+          "Beautiful LFO PAD",
+          "Retro BASS Sound, Melodic House"
+        ],
+        "answerIndex": 2,
+        "explanation": "Video 7 focuses on \"Beautiful LFO PAD\" from \"DIVA Tutorial | Beautiful LFO PAD | Sound Design\"."
+      },
+      {
+        "id": "LlO-tStnKRU-topic-8",
+        "question": "What is the likely lesson focus of playlist video 8?",
+        "options": [
+          "Siren/Gliding Pad, Melodic House",
+          "Chord Stab Bass Tutorial",
+          "BASS Sound, Melodic house",
+          "Pluck Chords, Organic house"
+        ],
+        "answerIndex": 1,
+        "explanation": "Playlist video 8 highlights \"Chord Stab Bass Tutorial\"."
+      },
+      {
+        "id": "xkSIEbpUbuw-topic-9",
+        "question": "In video 9, what is the main topic?",
+        "options": [
+          "Melodic House Pluck Tutorial",
+          "Dirty STAB, Melodic Techno",
+          "Brilliant Lead, Melodic House",
+          "Deep Organic Bass, Organic Tech"
+        ],
+        "answerIndex": 0,
+        "explanation": "Video 9 is \"Melodic House Pluck Tutorial | Diva | Sound design | This never happened, Polarinc., Anjunadeep\", which focuses on \"Melodic House Pluck Tutorial\"."
+      },
+      {
+        "id": "l9-uhJdLc1c-topic-10",
+        "question": "Which title best matches video 10?",
+        "options": [
+          "Brilliant Lead, Melodic House",
+          "Melodic House Bass",
+          "BASS Sound, Melodic Techno",
+          "Chord Stab Bass Tutorial"
+        ],
+        "answerIndex": 1,
+        "explanation": "The best matching title for video 10 is \"Diva Tutorial | Melodic House Bass | Sound Design | This Never Happened | Anjunadeep\"."
+      },
+      {
+        "id": "H6_Dfw-qRdA-topic-11",
+        "question": "Video 11 in this playlist focuses on which concept?",
+        "options": [
+          "Vibey Pluck / Lead, Melodic House and Techno",
+          "Lead Sound, Melodic House and Techno",
+          "DIVA Tutorial",
+          "Using 4 Key Sounds of Ben Böhmer"
+        ],
+        "answerIndex": 3,
+        "explanation": "Video 11 focuses on \"Using 4 Key Sounds of Ben Böhmer\" from \"DIVA VS SERUM | Using 4 Key Sounds of Ben Böhmer | Anjunadeep - Tutorial\"."
+      },
+      {
+        "id": "_1POi1cmgqY-topic-12",
+        "question": "What is the likely lesson focus of playlist video 12?",
+        "options": [
+          "Franky Wah Pluck",
+          "Plucky Lead, Melodic Techno",
+          "SWEDISH HOUSE MAFIA BASS",
+          "Deep Organic Bass, Organic Tech"
+        ],
+        "answerIndex": 0,
+        "explanation": "Playlist video 12 highlights \"Franky Wah Pluck\"."
+      },
+      {
+        "id": "tVkOpACCu7Q-topic-13",
+        "question": "In video 13, what is the main topic?",
+        "options": [
+          "Powerful Duo Lead",
+          "HUGE NOISE PAD, Deep Melodic House",
+          "Beautiful PAD Sound, Organic House",
+          "CRAZY GOOD SOUND for Lead / Bass"
+        ],
+        "answerIndex": 2,
+        "explanation": "Video 13 is \"DIVA Tutorial | Beautiful PAD Sound, Organic House\", which focuses on \"Beautiful PAD Sound, Organic House\"."
+      },
+      {
+        "id": "6fYojb8ralw-topic-14",
+        "question": "Which title best matches video 14?",
+        "options": [
+          "HUGE NOISE PAD, Deep Melodic House",
+          "Retro BASS Sound, Melodic House",
+          "Analog Lead Sound with U",
+          "CRAZY GOOD SOUND for Lead / Bass"
+        ],
+        "answerIndex": 1,
+        "explanation": "The best matching title for video 14 is \"DIVA Tutorial | Retro BASS Sound, Melodic House | CRi, Anjunadeep - Tutorial\"."
+      },
+      {
+        "id": "rH6ICVzILrc-topic-15",
+        "question": "Video 15 in this playlist focuses on which concept?",
+        "options": [
+          "DIVA Tutorial",
+          "BASS Sound, Melodic House",
+          "Wobble LFO FX, Melodic Techno",
+          "Lead and Bass, Melodic House and Techno"
+        ],
+        "answerIndex": 1,
+        "explanation": "Video 15 focuses on \"BASS Sound, Melodic House\" from \"DIVA Tutorial | BASS Sound, Melodic House | Marsh, Nox Van - Come Together | Anjunadeep - Tutorial\"."
+      },
+      {
+        "id": "Kf2KklP9mSY-topic-16",
+        "question": "What is the likely lesson focus of playlist video 16?",
+        "options": [
+          "Lead, Melodic House & Techno",
+          "Powerful Duo Lead",
+          "HUGE NOISE PAD, Deep Melodic House",
+          "BASS Sound, Melodic house"
+        ],
+        "answerIndex": 3,
+        "explanation": "Playlist video 16 highlights \"BASS Sound, Melodic house\"."
+      },
+      {
+        "id": "Nc-Rv6LfF3E-topic-17",
+        "question": "In video 17, what is the main topic?",
+        "options": [
+          "Warping Lead Pluck Sound, Melodic Techno",
+          "Beautiful LFO PAD",
+          "BASS Sound, Melodic House",
+          "DONK Bass Sound, Afterlife Style"
+        ],
+        "answerIndex": 2,
+        "explanation": "Video 17 is \"DIVA Tutorial | BASS Sound, Melodic House | Lane 8 -The Rope | This Never Happened - Tutorial\", which focuses on \"BASS Sound, Melodic House\"."
+      },
+      {
+        "id": "CX_tck021w4-topic-18",
+        "question": "Which title best matches video 18?",
+        "options": [
+          "Storyteller Arp",
+          "DUO Lead, Melodic House & Techno",
+          "Pitch Bend Bass , Melodic Techno",
+          "Brilliant Lead, Melodic House"
+        ],
+        "answerIndex": 2,
+        "explanation": "The best matching title for video 18 is \"DIVA Tutorial | Pitch Bend Bass , Melodic Techno | Rinzen - Skin Remix, Tutorial\"."
+      },
+      {
+        "id": "a4BBFg4yRXk-topic-19",
+        "question": "Video 19 in this playlist focuses on which concept?",
+        "options": [
+          "BASS Sound, Melodic house",
+          "Lead and Bass, Melodic House and Techno",
+          "BASS Sound, Melodic House",
+          "BASS Sound for MELODIC TECHNO"
+        ],
+        "answerIndex": 3,
+        "explanation": "Video 19 focuses on \"BASS Sound for MELODIC TECHNO\" from \"DIVA Tutorial | BASS Sound for MELODIC TECHNO\"."
+      },
+      {
+        "id": "T5LkFje9K_I-topic-20",
+        "question": "What is the likely lesson focus of playlist video 20?",
+        "options": [
+          "Dreamy Lead, Melodic Techno",
+          "Lead and Bass, Melodic House and Techno",
+          "BRASS Lead Sound",
+          "Pluck Sound, Melodic Techno"
+        ],
+        "answerIndex": 2,
+        "explanation": "Playlist video 20 highlights \"BRASS Lead Sound\"."
+      },
+      {
+        "id": "xoou5BAUH8A-topic-21",
+        "question": "In video 21, what is the main topic?",
+        "options": [
+          "Detuned Lead Sound, Melodic Techno",
+          "Melodic House Bass",
+          "SWEDISH HOUSE MAFIA BASS",
+          "Powerful Duo Lead"
+        ],
+        "answerIndex": 2,
+        "explanation": "Video 21 is \"DIVA Tutorial | SWEDISH HOUSE MAFIA BASS | Deep House | Time | Tutorial | Sound Design\", which focuses on \"SWEDISH HOUSE MAFIA BASS\"."
+      },
+      {
+        "id": "c2rej2ckLOE-topic-22",
+        "question": "Which title best matches video 22?",
+        "options": [
+          "Pitch Bend Bass , Melodic Techno",
+          "GNARLY LEAD, Melodic Techno",
+          "Mystic Arp, Melodic House & Techno",
+          "Diva Tutorial"
+        ],
+        "answerIndex": 3,
+        "explanation": "The best matching title for video 22 is \"Diva Tutorial | BEAUTIFUL ARP | Melodic House | Ben Bohmer - Father Ocean, Anjunadeep - Tutorial\"."
+      },
+      {
+        "id": "xn0-GEQyizU-topic-23",
+        "question": "Video 23 in this playlist focuses on which concept?",
+        "options": [
+          "Powerful Duo Lead",
+          "Plucky Lead, Melodic Techno",
+          "DARK Atmospheric and Cinematic Pad",
+          "BIG PLUCK LEAD, Melodic Techno"
+        ],
+        "answerIndex": 2,
+        "explanation": "Video 23 focuses on \"DARK Atmospheric and Cinematic Pad\" from \"DIVA Tutorial | DARK Atmospheric and Cinematic Pad\"."
+      },
+      {
+        "id": "iSFpkOS5xSA-topic-24",
+        "question": "What is the likely lesson focus of playlist video 24?",
+        "options": [
+          "GLITCHY Lead, Melodic House/Techno",
+          "Arp for FAT Background",
+          "Huge Stab, Melodic Techno",
+          "DIRTY Organic BASS Tutorial"
+        ],
+        "answerIndex": 0,
+        "explanation": "Playlist video 24 highlights \"GLITCHY Lead, Melodic House/Techno\"."
+      },
+      {
+        "id": "XIh8oVx9jsc-topic-25",
+        "question": "In video 25, what is the main topic?",
+        "options": [
+          "DARK Atmospheric and Cinematic Pad",
+          "LFO Lead Sound Organic",
+          "GNARLY LEAD, Melodic Techno",
+          "Warping Lead Pluck Sound, Melodic Techno"
+        ],
+        "answerIndex": 1,
+        "explanation": "Video 25 is \"DIVA Tutorial | LFO Lead Sound Organic | Colyn, Afterlife, All Day I Dream\", which focuses on \"LFO Lead Sound Organic\"."
+      },
+      {
+        "id": "0ITGdTLNCh0-topic-26",
+        "question": "Which title best matches video 26?",
+        "options": [
+          "Our Intro Song!",
+          "Crazy Detune Lead for Melodic Techno and House",
+          "Siren/Gliding Pad, Melodic House",
+          "DIVA Tutorial"
+        ],
+        "answerIndex": 3,
+        "explanation": "The best matching title for video 26 is \"DIVA Tutorial | Pluck Sound | Melodic House | Lane 8 - No Fun, Anjunadeep - Tutorial\"."
+      },
+      {
+        "id": "i3Vfp6rXnb4-topic-27",
+        "question": "Video 27 in this playlist focuses on which concept?",
+        "options": [
+          "Deep Organic Bass, Organic Tech",
+          "BRASS Lead Sound",
+          "Groovy Pluck Sound",
+          "CRAZY GOOD SOUND for Lead / Bass"
+        ],
+        "answerIndex": 2,
+        "explanation": "Video 27 focuses on \"Groovy Pluck Sound\" from \"DIVA Tutorial | Groovy Pluck Sound | Organic House | All Day I Dream | Yannek Maunz\"."
+      },
+      {
+        "id": "s7AlmYH1DdM-topic-28",
+        "question": "What is the likely lesson focus of playlist video 28?",
+        "options": [
+          "Warping Lead Pluck Sound, Melodic Techno",
+          "Analog Lead Sound with U",
+          "Deep Organic Bass, Organic Tech",
+          "CRAZY GOOD SOUND for Lead / Bass"
+        ],
+        "answerIndex": 0,
+        "explanation": "Playlist video 28 highlights \"Warping Lead Pluck Sound, Melodic Techno\"."
+      },
+      {
+        "id": "-Pwpqq56OjA-topic-29",
+        "question": "In video 29, what is the main topic?",
+        "options": [
+          "Pluck Chords, Organic house",
+          "BASS Sound, Melodic Techno",
+          "Melodic House Pluck Tutorial",
+          "Lead and Bass, Melodic Techno"
+        ],
+        "answerIndex": 1,
+        "explanation": "Video 29 is \"DIVA Tutorial | BASS Sound, Melodic Techno | Rolling bass / Sustain Bass - Tutorial\", which focuses on \"BASS Sound, Melodic Techno\"."
+      },
+      {
+        "id": "FChoAlyEAvw-topic-30",
+        "question": "Which title best matches video 30?",
+        "options": [
+          "Brilliant Lead, Melodic House",
+          "HUGE NOISE PAD, Deep Melodic House",
+          "Huge Pluck Sound, Melodic Techno & House",
+          "Wobble LFO FX, Melodic Techno"
+        ],
+        "answerIndex": 1,
+        "explanation": "The best matching title for video 30 is \"DIVA Tutorial | HUGE NOISE PAD, Deep Melodic House | LAR, Anjunadeep, Tim Engelhardt - Tutorial\"."
+      },
+      {
+        "id": "J59gpmqZ7pA-topic-31",
+        "question": "Video 31 in this playlist focuses on which concept?",
+        "options": [
+          "Using 4 Key Sounds of Ben Böhmer",
+          "Dirty STAB, Melodic Techno",
+          "BASS Sound, Melodic House",
+          "On My Knees Bass Sound"
+        ],
+        "answerIndex": 3,
+        "explanation": "Video 31 focuses on \"On My Knees Bass Sound\" from \"DIVA Tutorial | On My Knees Bass Sound | RÜFÜS DU SOL - Tutorial\"."
+      },
+      {
+        "id": "-DnNBgtZ0HI-topic-32",
+        "question": "What is the likely lesson focus of playlist video 32?",
+        "options": [
+          "SWEDISH HOUSE MAFIA BASS",
+          "Siren/Gliding Pad, Melodic House",
+          "Arp for FAT Background",
+          "Wonderful Pluck, Melodic House"
+        ],
+        "answerIndex": 1,
+        "explanation": "Playlist video 32 highlights \"Siren/Gliding Pad, Melodic House\"."
+      },
+      {
+        "id": "d4APstM3zo4-topic-33",
+        "question": "In video 33, what is the main topic?",
+        "options": [
+          "Deep Organic Bass, Organic Tech",
+          "Lead Sound, MELODIC HOUSE & TECHNO",
+          "Warping Lead Pluck Sound, Melodic Techno",
+          "Brilliant Lead, Melodic House"
+        ],
+        "answerIndex": 0,
+        "explanation": "Video 33 is \"DIVA Tutorial | Deep Organic Bass, Organic Tech - Tutorial\", which focuses on \"Deep Organic Bass, Organic Tech\"."
+      },
+      {
+        "id": "qGGLlWimfkI-topic-34",
+        "question": "Which title best matches video 34?",
+        "options": [
+          "Pluck Sound, Melodic Techno",
+          "Pitch Bend Bass , Melodic Techno",
+          "Pluck Chords, Organic house",
+          "GLITCHY Lead, Melodic House/Techno"
+        ],
+        "answerIndex": 2,
+        "explanation": "The best matching title for video 34 is \"Diva | Pluck Chords, Organic house | All day I dream - Tutorial\"."
+      },
+      {
+        "id": "vCVfYNNZBtU-topic-35",
+        "question": "Video 35 in this playlist focuses on which concept?",
+        "options": [
+          "Arp for FAT Background",
+          "Huge Pluck Sound, Melodic Techno & House",
+          "Arp for DRIVE, Melodic Techno",
+          "Pluck Chords, Organic house"
+        ],
+        "answerIndex": 0,
+        "explanation": "Video 35 focuses on \"Arp for FAT Background\" from \"DIVA Tutorial | Arp for FAT Background | Melodic Techno\"."
+      },
+      {
+        "id": "9feid4DbWZY-topic-36",
+        "question": "What is the likely lesson focus of playlist video 36?",
+        "options": [
+          "Warping Lead Pluck Sound, Melodic Techno",
+          "Amazing Bass, Melodic House & Techno",
+          "Dreamy Arp, Melodic House",
+          "Dreamy Lead, Melodic House"
+        ],
+        "answerIndex": 3,
+        "explanation": "Playlist video 36 highlights \"Dreamy Lead, Melodic House\"."
+      },
+      {
+        "id": "DsXUFBxTIhs-topic-37",
+        "question": "In video 37, what is the main topic?",
+        "options": [
+          "Warping Lead Pluck Sound, Melodic Techno",
+          "BIG PLUCK LEAD, Melodic Techno",
+          "BRASS Lead Sound",
+          "Arp for DRIVE, Melodic Techno"
+        ],
+        "answerIndex": 1,
+        "explanation": "Video 37 is \"DIVA Tutorial | BIG PLUCK LEAD, Melodic Techno | Hidden Empire, Moonwalk - Tutorial\", which focuses on \"BIG PLUCK LEAD, Melodic Techno\"."
+      },
+      {
+        "id": "WXJVtURaopw-topic-38",
+        "question": "Which title best matches video 38?",
+        "options": [
+          "GLITCHY Lead, Melodic House/Techno",
+          "700+ Presets And MIDIs That Will Change Your Sound!",
+          "You'll Love This Lead, Melodic House",
+          "Crazy Detune Lead for Melodic Techno and House"
+        ],
+        "answerIndex": 1,
+        "explanation": "The best matching title for video 38 is \"DIVA BUNDLE | 700+ Presets And MIDIs That Will Change Your Sound!\"."
+      },
+      {
+        "id": "LWnC7PdPnwI-topic-39",
+        "question": "Video 39 in this playlist focuses on which concept?",
+        "options": [
+          "Powerful Duo Lead",
+          "DARK Atmospheric and Cinematic Pad",
+          "Beautiful Arp, Melodic House",
+          "\"Analog\" Bass, Melodic House & Techno"
+        ],
+        "answerIndex": 2,
+        "explanation": "Video 39 focuses on \"Beautiful Arp, Melodic House\" from \"DIVA Tutorial | Beautiful Arp, Melodic House | Meduza, Tutorial\"."
+      },
+      {
+        "id": "Mt7qPx8iVlM-topic-40",
+        "question": "What is the likely lesson focus of playlist video 40?",
+        "options": [
+          "Lead Sound, MELODIC HOUSE & TECHNO",
+          "Lead Sound, Melodic House and Techno",
+          "You'll Love This Lead, Melodic House",
+          "CRAZY Lead, Melodic Techno"
+        ],
+        "answerIndex": 3,
+        "explanation": "Playlist video 40 highlights \"CRAZY Lead, Melodic Techno\"."
+      },
+      {
+        "id": "brjaIuS76Po-topic-41",
+        "question": "In video 41, what is the main topic?",
+        "options": [
+          "BIG PLUCK LEAD, Melodic Techno",
+          "Lead and Bass, Melodic Techno",
+          "Diva Tutorial",
+          "Storyteller Arp"
+        ],
+        "answerIndex": 3,
+        "explanation": "Video 41 is \"DIVA Tutorial | Storyteller Arp | Grum, Anjunabeats - Tutorial\", which focuses on \"Storyteller Arp\"."
+      },
+      {
+        "id": "ofhtSzODEz8-topic-42",
+        "question": "Which title best matches video 42?",
+        "options": [
+          "Dreamy Arp, Melodic House",
+          "Pluck Sound, Melodic Techno",
+          "Vibey Pluck / Lead, Melodic House and Techno",
+          "LUSH Noise Pad Tutorial"
+        ],
+        "answerIndex": 0,
+        "explanation": "The best matching title for video 42 is \"DIVA Tutorial | Dreamy Arp, Melodic House | Tinlicker, Anjunadeep - Tutorial\"."
+      },
+      {
+        "id": "Par7bN9Wfgk-topic-43",
+        "question": "Video 43 in this playlist focuses on which concept?",
+        "options": [
+          "Lead and Bass, Melodic Techno",
+          "Dirty STAB, Melodic Techno",
+          "Mystic Arp, Melodic House & Techno",
+          "Melodic House Pluck Tutorial"
+        ],
+        "answerIndex": 2,
+        "explanation": "Video 43 focuses on \"Mystic Arp, Melodic House & Techno\" from \"DIVA Tutorial | Mystic Arp, Melodic House & Techno | Anyma, Afterlife - Tutorial\"."
+      },
+      {
+        "id": "m4ohLQn1ObI-topic-44",
+        "question": "What is the likely lesson focus of playlist video 44?",
+        "options": [
+          "DUO Lead, Melodic House & Techno",
+          "Beautiful Long Lead, Melodic House & Techno",
+          "Melodic House Pluck Tutorial",
+          "Lead Sound, Melodic Techno"
+        ],
+        "answerIndex": 3,
+        "explanation": "Playlist video 44 highlights \"Lead Sound, Melodic Techno\"."
+      },
+      {
+        "id": "wGp8nS1Q96Q-topic-45",
+        "question": "In video 45, what is the main topic?",
+        "options": [
+          "Lead, Melodic House & Techno",
+          "DIVA Tutorial",
+          "Unique Lead, Melodic House and Techno",
+          "Vibrant Pluck, Melodic Techno"
+        ],
+        "answerIndex": 3,
+        "explanation": "Video 45 is \"DIVA Tutorial | Vibrant Pluck, Melodic Techno | Tale of Us, Afterlife - Tutorial\", which focuses on \"Vibrant Pluck, Melodic Techno\"."
+      },
+      {
+        "id": "cmvsWH8MMzU-topic-46",
+        "question": "Which title best matches video 46?",
+        "options": [
+          "Dreamy Lead, Melodic Techno",
+          "Groovy Pluck Sound",
+          "BASS Sound, Melodic Techno",
+          "Lead, Melodic House & Techno"
+        ],
+        "answerIndex": 0,
+        "explanation": "The best matching title for video 46 is \"DIVA Tutorial | Dreamy Lead, Melodic Techno | Tale of Us, Afterlife - Tutorial\"."
+      },
+      {
+        "id": "r0-eproAQng-topic-47",
+        "question": "Video 47 in this playlist focuses on which concept?",
+        "options": [
+          "Arp for DRIVE, Melodic Techno",
+          "CRAZY Lead, Melodic Techno",
+          "GNARLY LEAD, Melodic Techno",
+          "SWEDISH HOUSE MAFIA BASS"
+        ],
+        "answerIndex": 2,
+        "explanation": "Video 47 focuses on \"GNARLY LEAD, Melodic Techno\" from \"DIVA Tutorial | GNARLY LEAD, Melodic Techno | Anyma, Afterlife - Tutorial\"."
+      },
+      {
+        "id": "PwuiLyQDVwk-topic-48",
+        "question": "What is the likely lesson focus of playlist video 48?",
+        "options": [
+          "LFO Lead Sound Organic",
+          "Huge Pluck Sound, Melodic Techno & House",
+          "Deep Organic Bass, Organic Tech",
+          "Dirty STAB, Melodic Techno"
+        ],
+        "answerIndex": 3,
+        "explanation": "Playlist video 48 highlights \"Dirty STAB, Melodic Techno\"."
+      },
+      {
+        "id": "AmvGI0WFeGY-topic-49",
+        "question": "In video 49, what is the main topic?",
+        "options": [
+          "Melodic House Bass",
+          "Melodic Techno Bass",
+          "Analog Lead Sound with U",
+          "BASS Sound, Melodic Techno"
+        ],
+        "answerIndex": 2,
+        "explanation": "Video 49 is \"Analog Lead Sound with U-He Diva init preset\", which focuses on \"Analog Lead Sound with U\"."
+      },
+      {
+        "id": "rgPr_te7sLQ-topic-50",
+        "question": "Which title best matches video 50?",
+        "options": [
+          "Beautiful Arp, Melodic House",
+          "Using 4 Key Sounds of Ben Böhmer",
+          "Diva Tutorial",
+          "Detuned Lead Sound, Melodic Techno"
+        ],
+        "answerIndex": 2,
+        "explanation": "The best matching title for video 50 is \"Diva Tutorial - Reese Bass - Long Deep Bass #shorts\"."
+      },
+      {
+        "id": "O-1gR22LEGU-topic-51",
+        "question": "Video 51 in this playlist focuses on which concept?",
+        "options": [
+          "SWEDISH HOUSE MAFIA BASS",
+          "Deep Organic Bass, Organic Tech",
+          "DIVA Tutorial",
+          "Beautiful Arp, Melodic Techno"
+        ],
+        "answerIndex": 3,
+        "explanation": "Video 51 focuses on \"Beautiful Arp, Melodic Techno\" from \"DIVA Tutorial | Beautiful Arp, Melodic Techno | Artbat, UPPERGROUND - Tutorial\"."
+      },
+      {
+        "id": "cjg7tm8sZBw-topic-52",
+        "question": "What is the likely lesson focus of playlist video 52?",
+        "options": [
+          "\"Analog\" Bass, Melodic House & Techno",
+          "Beautiful Arp, Melodic House",
+          "Diva Tutorial",
+          "Pluck Sound, Melodic Techno"
+        ],
+        "answerIndex": 3,
+        "explanation": "Playlist video 52 highlights \"Pluck Sound, Melodic Techno\"."
+      },
+      {
+        "id": "Ja9mhia5ghw-topic-53",
+        "question": "In video 53, what is the main topic?",
+        "options": [
+          "Warping Lead Pluck Sound, Melodic Techno",
+          "Detuned Lead Sound, Melodic Techno",
+          "Diva Tutorial",
+          "DONK Bass Sound, Afterlife Style"
+        ],
+        "answerIndex": 1,
+        "explanation": "Video 53 is \"Diva Tutorial | Detuned Lead Sound, Melodic Techno | Afterlife - Tutorial\", which focuses on \"Detuned Lead Sound, Melodic Techno\"."
+      },
+      {
+        "id": "o_eHfLK6-i8-topic-54",
+        "question": "Which title best matches video 54?",
+        "options": [
+          "80's Lead Sound, Melodic Techno",
+          "HUGE NOISE PAD, Deep Melodic House",
+          "Wonderful Lead, Melodic House",
+          "Beautiful Long Lead, Melodic House & Techno"
+        ],
+        "answerIndex": 0,
+        "explanation": "The best matching title for video 54 is \"DIVA Tutorial | 80's Lead Sound, Melodic Techno | Afterlife\"."
+      },
+      {
+        "id": "T1fno76T7oQ-topic-55",
+        "question": "Video 55 in this playlist focuses on which concept?",
+        "options": [
+          "Retro BASS Sound, Melodic House",
+          "Lead, Melodic House & Techno",
+          "CRAZY GOOD SOUND for Lead / Bass",
+          "Arp for DRIVE, Melodic Techno"
+        ],
+        "answerIndex": 1,
+        "explanation": "Video 55 focuses on \"Lead, Melodic House & Techno\" from \"DIVA Tutorial | Lead, Melodic House & Techno | Lane 8, This Never Happened\"."
+      },
+      {
+        "id": "yOPZ0sOhHWM-topic-56",
+        "question": "What is the likely lesson focus of playlist video 56?",
+        "options": [
+          "Lead, Melodic House & Techno",
+          "Dreamy Arp, Melodic House",
+          "Lead Sound, Melodic House and Techno",
+          "BRASS Lead Sound"
+        ],
+        "answerIndex": 2,
+        "explanation": "Playlist video 56 highlights \"Lead Sound, Melodic House and Techno\"."
+      },
+      {
+        "id": "c0CtMXPkUMQ-topic-57",
+        "question": "In video 57, what is the main topic?",
+        "options": [
+          "Plucky Lead, Melodic Techno",
+          "Beautiful LFO PAD",
+          "Lead Sound, MELODIC HOUSE & TECHNO",
+          "Beautiful Arp, Melodic Techno"
+        ],
+        "answerIndex": 2,
+        "explanation": "Video 57 is \"DIVA Tutorial | Lead Sound, MELODIC HOUSE & TECHNO | Tim Green, Anjunadeep\", which focuses on \"Lead Sound, MELODIC HOUSE & TECHNO\"."
+      },
+      {
+        "id": "Tx9n61yZb4U-topic-58",
+        "question": "Which title best matches video 58?",
+        "options": [
+          "Brilliant Lead, Melodic House",
+          "Lead, Melodic House & Techno",
+          "Plucky Lead, Melodic Techno",
+          "Beautiful Long Lead, Melodic House & Techno"
+        ],
+        "answerIndex": 3,
+        "explanation": "The best matching title for video 58 is \"DIVA Tutorial | Beautiful Long Lead, Melodic House & Techno | Klur, Nils Hoffmann\"."
+      },
+      {
+        "id": "r8sil2QEbNA-topic-59",
+        "question": "Video 59 in this playlist focuses on which concept?",
+        "options": [
+          "BRASS Lead Sound",
+          "Lead and Bass, Melodic House and Techno",
+          "Powerful Duo Lead",
+          "Warping Lead Pluck Sound, Melodic Techno"
+        ],
+        "answerIndex": 1,
+        "explanation": "Video 59 focuses on \"Lead and Bass, Melodic House and Techno\" from \"DIVA Tutorial | Lead and Bass, Melodic House and Techno | Nils Hoffmann, Anjunadeep\"."
+      },
+      {
+        "id": "P8FZmYnlzzo-topic-60",
+        "question": "What is the likely lesson focus of playlist video 60?",
+        "options": [
+          "GLITCHY Lead, Melodic House/Techno",
+          "\"Analog\" Bass, Melodic House & Techno",
+          "Amazing Bass, Melodic House & Techno",
+          "Melodic Techno Bass"
+        ],
+        "answerIndex": 1,
+        "explanation": "Playlist video 60 highlights \"\"Analog\" Bass, Melodic House & Techno\"."
+      },
+      {
+        "id": "QEBBJGkel4M-topic-61",
+        "question": "In video 61, what is the main topic?",
+        "options": [
+          "Huge Pluck Sound, Melodic Techno & House",
+          "Lead Sound, MELODIC HOUSE & TECHNO",
+          "HUGE NOISE PAD, Deep Melodic House",
+          "Plucky Lead, Melodic Techno"
+        ],
+        "answerIndex": 0,
+        "explanation": "Video 61 is \"DIVA Tutorial | Huge Pluck Sound, Melodic Techno & House | Anyma, Afterlife\", which focuses on \"Huge Pluck Sound, Melodic Techno & House\"."
+      },
+      {
+        "id": "V8ojPFwCCK4-topic-62",
+        "question": "Which title best matches video 62?",
+        "options": [
+          "Arp for FAT Background",
+          "Arp for DRIVE, Melodic Techno",
+          "Huge Pluck Sound, Melodic Techno & House",
+          "Dreamy Lead, Melodic House"
+        ],
+        "answerIndex": 1,
+        "explanation": "The best matching title for video 62 is \"DIVA Tutorial | Arp for DRIVE, Melodic Techno | Cassian, Afterlife\"."
+      },
+      {
+        "id": "k-5KXM0rGXg-topic-63",
+        "question": "Video 63 in this playlist focuses on which concept?",
+        "options": [
+          "Huge Stab, Melodic Techno",
+          "Arp for DRIVE, Melodic Techno",
+          "Dreamy Arp, Melodic House",
+          "Pluck Sound, Melodic Techno"
+        ],
+        "answerIndex": 0,
+        "explanation": "Video 63 focuses on \"Huge Stab, Melodic Techno\" from \"DIVA Tutorial | Huge Stab, Melodic Techno | Anyma, Afterlife\"."
+      },
+      {
+        "id": "yDhO4Tkia8E-topic-64",
+        "question": "What is the likely lesson focus of playlist video 64?",
+        "options": [
+          "CRAZY Lead, Melodic Techno",
+          "Vibrant Pluck, Melodic Techno",
+          "Wobble LFO FX, Melodic Techno",
+          "Beautiful Arp, Melodic House"
+        ],
+        "answerIndex": 2,
+        "explanation": "Playlist video 64 highlights \"Wobble LFO FX, Melodic Techno\"."
+      },
+      {
+        "id": "siUpxRFoixY-topic-65",
+        "question": "In video 65, what is the main topic?",
+        "options": [
+          "Beautiful LFO PAD",
+          "BASS Sound for MELODIC TECHNO",
+          "Plucky Lead, Melodic Techno",
+          "BASS Sound, Melodic Techno"
+        ],
+        "answerIndex": 2,
+        "explanation": "Video 65 is \"DIVA Tutorial | Plucky Lead, Melodic Techno | Innellea, Afterlife - Tutorial\", which focuses on \"Plucky Lead, Melodic Techno\"."
+      },
+      {
+        "id": "2IER4VwU58s-topic-66",
+        "question": "Which title best matches video 66?",
+        "options": [
+          "HUGE NOISE PAD, Deep Melodic House",
+          "Wonderful Lead, Melodic House",
+          "DUO Lead, Melodic House & Techno",
+          "CRAZY Lead, Melodic Techno"
+        ],
+        "answerIndex": 2,
+        "explanation": "The best matching title for video 66 is \"DIVA Tutorial | DUO Lead, Melodic House & Techno | Stephan Bodzin\"."
+      },
+      {
+        "id": "nawA5e4egr4-topic-67",
+        "question": "Video 67 in this playlist focuses on which concept?",
+        "options": [
+          "Crazy Detune Lead for Melodic Techno and House",
+          "Warping Lead Pluck Sound, Melodic Techno",
+          "Analog Lead Sound with U",
+          "Dirty STAB, Melodic Techno"
+        ],
+        "answerIndex": 0,
+        "explanation": "Video 67 focuses on \"Crazy Detune Lead for Melodic Techno and House\" from \"DIVA Tutorial | Crazy Detune Lead for Melodic Techno and House\"."
+      },
+      {
+        "id": "LbSFZaLskC8-topic-68",
+        "question": "What is the likely lesson focus of playlist video 68?",
+        "options": [
+          "Melodic House Bass",
+          "Beautiful PAD Sound, Organic House",
+          "Beautiful Pad for Melodic House and Techno",
+          "Warping Lead Pluck Sound, Melodic Techno"
+        ],
+        "answerIndex": 2,
+        "explanation": "Playlist video 68 highlights \"Beautiful Pad for Melodic House and Techno\"."
+      },
+      {
+        "id": "8x_TANJAhTw-topic-69",
+        "question": "In video 69, what is the main topic?",
+        "options": [
+          "Lead Sound, MELODIC HOUSE & TECHNO",
+          "Amazing Bass, Melodic House & Techno",
+          "Powerful Duo Lead",
+          "Beautiful Long Lead, Melodic House & Techno"
+        ],
+        "answerIndex": 2,
+        "explanation": "Video 69 is \"DIVA Tutorial | Powerful Duo Lead | Melodic House & Techno\", which focuses on \"Powerful Duo Lead\"."
+      },
+      {
+        "id": "6hgeebJ9DfE-topic-70",
+        "question": "Which title best matches video 70?",
+        "options": [
+          "CRAZY GOOD SOUND for Lead / Bass",
+          "Wonderful Pluck, Melodic House",
+          "Mystic Arp, Melodic House & Techno",
+          "Pitch Bend Bass , Melodic Techno"
+        ],
+        "answerIndex": 1,
+        "explanation": "The best matching title for video 70 is \"DIVA Tutorial | Wonderful Pluck, Melodic House | Ben Böhmer, Anjunadeep\"."
+      },
+      {
+        "id": "b5SU6h3OpnU-topic-71",
+        "question": "Video 71 in this playlist focuses on which concept?",
+        "options": [
+          "Lead, Melodic House & Techno",
+          "GNARLY LEAD, Melodic Techno",
+          "DIRTY Organic BASS Tutorial",
+          "Lead and Bass, Melodic Techno"
+        ],
+        "answerIndex": 3,
+        "explanation": "Video 71 focuses on \"Lead and Bass, Melodic Techno\" from \"DIVA Tutorial | Lead and Bass, Melodic Techno | Artbat, Goom Gum\"."
+      },
+      {
+        "id": "y8B5Uauu1_8-topic-72",
+        "question": "What is the likely lesson focus of playlist video 72?",
+        "options": [
+          "Wobble LFO FX, Melodic Techno",
+          "Franky Wah Pluck",
+          "Beautiful PAD Sound, Organic House",
+          "Vibey Pluck / Lead, Melodic House and Techno"
+        ],
+        "answerIndex": 3,
+        "explanation": "Playlist video 72 highlights \"Vibey Pluck / Lead, Melodic House and Techno\"."
+      },
+      {
+        "id": "ugdcgfImG3Q-topic-73",
+        "question": "In video 73, what is the main topic?",
+        "options": [
+          "Chill Pluck for Vibes, Melodic House",
+          "DIVA Tutorial",
+          "Pluck Chords, Organic house",
+          "Storyteller Arp"
+        ],
+        "answerIndex": 0,
+        "explanation": "Video 73 is \"DIVA Tutorial | Chill Pluck for Vibes, Melodic House | All Day I Dream, Tim Green\", which focuses on \"Chill Pluck for Vibes, Melodic House\"."
+      },
+      {
+        "id": "801ciXHYMFo-topic-74",
+        "question": "Which title best matches video 74?",
+        "options": [
+          "Unique Lead, Melodic House and Techno",
+          "Lead and Bass, Melodic Techno",
+          "Melodic House Pluck Tutorial",
+          "DUO Lead, Melodic House & Techno"
+        ],
+        "answerIndex": 0,
+        "explanation": "The best matching title for video 74 is \"Diva Tutorial | Unique Lead, Melodic House and Techno | Anjunadeep\"."
+      },
+      {
+        "id": "FMUYhEbOQiA-topic-75",
+        "question": "Video 75 in this playlist focuses on which concept?",
+        "options": [
+          "Amazing Bass, Melodic House & Techno",
+          "BRASS Lead Sound",
+          "Beautiful Long Lead, Melodic House & Techno",
+          "BASS Sound, Melodic Techno"
+        ],
+        "answerIndex": 0,
+        "explanation": "Video 75 focuses on \"Amazing Bass, Melodic House & Techno\" from \"Diva Tutorial | Amazing Bass, Melodic House & Techno | Stephan Bodzin\"."
+      },
+      {
+        "id": "NsNKTaVAs74-topic-76",
+        "question": "What is the likely lesson focus of playlist video 76?",
+        "options": [
+          "Storyteller Arp",
+          "Wonderful Lead, Melodic House",
+          "DIRTY Organic BASS Tutorial",
+          "Lead Sound, Melodic House and Techno"
+        ],
+        "answerIndex": 1,
+        "explanation": "Playlist video 76 highlights \"Wonderful Lead, Melodic House\"."
+      },
+      {
+        "id": "pyE9Ws7gIRw-topic-77",
+        "question": "In video 77, what is the main topic?",
+        "options": [
+          "Lead Sound, MELODIC HOUSE & TECHNO",
+          "Brilliant Lead, Melodic House",
+          "Dreamy Arp, Melodic House",
+          "BASS Sound, Melodic house"
+        ],
+        "answerIndex": 1,
+        "explanation": "Video 77 is \"Diva Tutorial | Brilliant Lead, Melodic House | Anjunadeep and Colorize Style\", which focuses on \"Brilliant Lead, Melodic House\"."
+      },
+      {
+        "id": "TTJCuGlOBBw-topic-78",
+        "question": "Which title best matches video 78?",
+        "options": [
+          "Retro BASS Sound, Melodic House",
+          "BASS Sound, Melodic house",
+          "Crazy Detune Lead for Melodic Techno and House",
+          "You'll Love This Lead, Melodic House"
+        ],
+        "answerIndex": 3,
+        "explanation": "The best matching title for video 78 is \"DIVA Tutorial | You'll Love This Lead, Melodic House | All Day I Dream\"."
+      },
+      {
+        "id": "5eDE_HSNpNM-topic-79",
+        "question": "Video 79 in this playlist focuses on which concept?",
+        "options": [
+          "Franky Wah Pluck",
+          "DIVA Tutorial",
+          "Vibrant Pluck, Melodic Techno",
+          "DARK Atmospheric and Cinematic Pad"
+        ],
+        "answerIndex": 1,
+        "explanation": "Video 79 focuses on \"DIVA Tutorial\" from \"DIVA Tutorial | Warm, Analog-Sounding Keys | Anjunadeep and Colorize\"."
+      }
+    ],
+    "PLx5i827-FDqNY_grenYJZJpG1esu7GK6v": [
+      {
+        "id": "cPxE9-Dr3EI-topic-1",
+        "question": "In video 1, what is the main topic?",
+        "options": [
+          "Sound Design and Synth Fundamentals",
+          "Synth Keys & Lofi Piano",
+          "Make Your Own Kick Drums"
+        ],
+        "answerIndex": 0,
+        "explanation": "Video 1 is \"Sound Design and Synth Fundamentals - Using Free Software\", which focuses on \"Sound Design and Synth Fundamentals\"."
+      },
+      {
+        "id": "tlygYWeOzTg-topic-2",
+        "question": "Which title best matches video 2?",
+        "options": [
+          "Sound Design Tutorial",
+          "Advanced Sound Design and Synths Tutorial",
+          "Sound Design and Synth Fundamentals",
+          "How To Make A Cinematic String Section"
+        ],
+        "answerIndex": 1,
+        "explanation": "The best matching title for video 2 is \"Advanced Sound Design and Synths Tutorial\"."
+      },
+      {
+        "id": "H6i55lXAMh0-topic-3",
+        "question": "Video 3 in this playlist focuses on which concept?",
+        "options": [
+          "Deep Reese Bass Tutorial",
+          "Sound Design and Synth Fundamentals",
+          "808s, Plucks, Growls and Sub Bass",
+          "Realistic String Section"
+        ],
+        "answerIndex": 2,
+        "explanation": "Video 3 focuses on \"808s, Plucks, Growls and Sub Bass\" from \"Bass Sound Design: 808s, Plucks, Growls and Sub Bass\"."
+      },
+      {
+        "id": "TosV3erGfsg-topic-4",
+        "question": "What is the likely lesson focus of playlist video 4?",
+        "options": [
+          "Sound Design Tutorial",
+          "Sound Design and Synth Fundamentals",
+          "Deep Reese Bass Tutorial",
+          "Ambient Pads and Atmospheres"
+        ],
+        "answerIndex": 3,
+        "explanation": "Playlist video 4 highlights \"Ambient Pads and Atmospheres\"."
+      },
+      {
+        "id": "JhZU6JGvoHw-topic-5",
+        "question": "In video 5, what is the main topic?",
+        "options": [
+          "How To Make A Cinematic String Section",
+          "Sound Design and Synth Fundamentals",
+          "Make Your Own Kick Drums"
+        ],
+        "answerIndex": 2,
+        "explanation": "Video 5 is \"Make Your Own Kick Drums - Punchy and Deep Kicks\", which focuses on \"Make Your Own Kick Drums\"."
+      },
+      {
+        "id": "zuvbfYvwca4-topic-6",
+        "question": "Which title best matches video 6?",
+        "options": [
+          "Make Your Own Kick Drums",
+          "Sound Design Tutorial",
+          "How To Make A Cinematic String Section",
+          "Synth Keys & Lofi Piano"
+        ],
+        "answerIndex": 3,
+        "explanation": "The best matching title for video 6 is \"Synth Keys & Lofi Piano - Sound Design Tutorial\"."
+      },
+      {
+        "id": "TYU764RIkmE-topic-7",
+        "question": "Video 7 in this playlist focuses on which concept?",
+        "options": [
+          "Deep Reese Bass Tutorial",
+          "Sound Design and Synth Fundamentals",
+          "How To Make A Cinematic String Section",
+          "Ambient Pads and Atmospheres"
+        ],
+        "answerIndex": 0,
+        "explanation": "Video 7 focuses on \"Deep Reese Bass Tutorial\" from \"Sound Design - Deep Reese Bass Tutorial\"."
+      },
+      {
+        "id": "Q6PIzxaDkcI-topic-8",
+        "question": "What is the likely lesson focus of playlist video 8?",
+        "options": [
+          "Sound Design Tutorial",
+          "Make Your Own Kick Drums",
+          "How To Make A Cinematic String Section",
+          "Synth Keys & Lofi Piano"
+        ],
+        "answerIndex": 0,
+        "explanation": "Playlist video 8 highlights \"Sound Design Tutorial\"."
+      },
+      {
+        "id": "eFtzu0jkPx4-topic-9",
+        "question": "In video 9, what is the main topic?",
+        "options": [
+          "Deep Reese Bass Tutorial",
+          "How To Make A Cinematic String Section",
+          "Realistic String Section",
+          "Synth Keys & Lofi Piano"
+        ],
+        "answerIndex": 2,
+        "explanation": "Video 9 is \"Realistic String Section - Sound Design Tutorial\", which focuses on \"Realistic String Section\"."
+      },
+      {
+        "id": "IK7cIBPKM1s-topic-10",
+        "question": "Which title best matches video 10?",
+        "options": [
+          "How To Make A Cinematic String Section",
+          "Realistic String Section",
+          "Sound Design and Synth Fundamentals",
+          "Ambient Pads and Atmospheres"
+        ],
+        "answerIndex": 0,
+        "explanation": "The best matching title for video 10 is \"How To Make A Cinematic String Section - Sound Design Tutorial\"."
+      },
+      {
+        "id": "NJLIS2MkFe4-topic-11",
+        "question": "Video 11 in this playlist focuses on which concept?",
+        "options": [
+          "Synth Keys & Lofi Piano",
+          "Ambient Pads and Atmospheres",
+          "Realistic String Section",
+          "Sound Design and Synth Fundamentals"
+        ],
+        "answerIndex": 3,
+        "explanation": "Video 11 focuses on \"Sound Design and Synth Fundamentals\" from \"Sound Design and Synth Fundamentals\"."
+      }
+    ],
+    "PLB585CE43B02669C3": [
+      {
+        "id": "6gHEIF0rT2w-topic-1",
+        "question": "In video 1, what is the main topic?",
+        "options": [
+          "#45 LEARN FREE MUSIC THEORY",
+          "#16 LEARN FREE MUSIC THEORY",
+          "#1 LEARN FREE MUSIC THEORY",
+          "#24 LEARN FREE MUSIC THEORY"
+        ],
+        "answerIndex": 2,
+        "explanation": "Video 1 is \"#1 LEARN FREE MUSIC THEORY\", which focuses on \"#1 LEARN FREE MUSIC THEORY\"."
+      },
+      {
+        "id": "TxBUnvrexhA-topic-2",
+        "question": "Which title best matches video 2?",
+        "options": [
+          "#2 LEARN FREE MUSIC THEORY",
+          "#29 LEARN FREE MUSIC THEORY",
+          "#45 LEARN FREE MUSIC THEORY",
+          "#35 LEARN FREE MUSIC THEORY"
+        ],
+        "answerIndex": 0,
+        "explanation": "The best matching title for video 2 is \"#2 LEARN FREE MUSIC THEORY\"."
+      },
+      {
+        "id": "7V6YgTa6DUI-topic-3",
+        "question": "Video 3 in this playlist focuses on which concept?",
+        "options": [
+          "#38 LEARN FREE MUSIC THEORY",
+          "#21 LEARN FREE MUSIC THEORY",
+          "#3 LEARN FREE MUSIC THEORY",
+          "#28 LEARN FREE MUSIC THEORY"
+        ],
+        "answerIndex": 2,
+        "explanation": "Video 3 focuses on \"#3 LEARN FREE MUSIC THEORY\" from \"#3 LEARN FREE MUSIC THEORY\"."
+      },
+      {
+        "id": "1Hwr_y4SylU-topic-4",
+        "question": "What is the likely lesson focus of playlist video 4?",
+        "options": [
+          "#4 LEARN FREE MUSIC THEORY",
+          "#49 LEARN FREE MUSIC THEORY",
+          "#16 LEARN FREE MUSIC THEORY",
+          "#19 LEARN FREE MUSIC THEORY"
+        ],
+        "answerIndex": 0,
+        "explanation": "Playlist video 4 highlights \"#4 LEARN FREE MUSIC THEORY\"."
+      },
+      {
+        "id": "nOnIhOx9uDw-topic-5",
+        "question": "In video 5, what is the main topic?",
+        "options": [
+          "#23 of LEARN FREE MUSIC THEORY",
+          "#5 LEARN FREE MUSIC THEORY",
+          "#33 LEARN FREE MUSIC THEORY",
+          "#12 LEARN FREE MUSIC THEORY"
+        ],
+        "answerIndex": 1,
+        "explanation": "Video 5 is \"#5 LEARN FREE MUSIC THEORY\", which focuses on \"#5 LEARN FREE MUSIC THEORY\"."
+      },
+      {
+        "id": "nfW4hazQO0s-topic-6",
+        "question": "Which title best matches video 6?",
+        "options": [
+          "#37 LEARN FREE MUSIC THEORY",
+          "#6 LEARN FREE MUSIC THEORY",
+          "#32 LEARN FREE MUSIC THEORY",
+          "#31 LEARN FREE MUSIC THEORY"
+        ],
+        "answerIndex": 1,
+        "explanation": "The best matching title for video 6 is \"#6 LEARN FREE MUSIC THEORY\"."
+      },
+      {
+        "id": "xxk-D7fbioo-topic-7",
+        "question": "Video 7 in this playlist focuses on which concept?",
+        "options": [
+          "#20 LEARN FREE MUSIC THEORY",
+          "#35 LEARN FREE MUSIC THEORY",
+          "#6 LEARN FREE MUSIC THEORY",
+          "#7 LEARN FREE MUSIC THEORY"
+        ],
+        "answerIndex": 3,
+        "explanation": "Video 7 focuses on \"#7 LEARN FREE MUSIC THEORY\" from \"#7 LEARN FREE MUSIC THEORY\"."
+      },
+      {
+        "id": "TD3atxIWw4Y-topic-8",
+        "question": "What is the likely lesson focus of playlist video 8?",
+        "options": [
+          "#8 LEARN FREE MUSIC THEORY",
+          "#49 LEARN FREE MUSIC THEORY",
+          "#17 LEARN FREE MUSIC THEORY",
+          "#14 LEARN FREE MUSIC THEORY"
+        ],
+        "answerIndex": 0,
+        "explanation": "Playlist video 8 highlights \"#8 LEARN FREE MUSIC THEORY\"."
+      },
+      {
+        "id": "DZihc7t8D2Q-topic-9",
+        "question": "In video 9, what is the main topic?",
+        "options": [
+          "#36 LEARN FREE MUSIC THEORY",
+          "#12 LEARN FREE MUSIC THEORY",
+          "#25 LEARN FREE MUSIC THEORY",
+          "#9 LEARN FREE MUSIC THEORY"
+        ],
+        "answerIndex": 3,
+        "explanation": "Video 9 is \"#9 LEARN FREE MUSIC THEORY\", which focuses on \"#9 LEARN FREE MUSIC THEORY\"."
+      },
+      {
+        "id": "jYGM3Qv3WVk-topic-10",
+        "question": "Which title best matches video 10?",
+        "options": [
+          "#10 LEARN FREE MUSIC THEORY",
+          "#7 LEARN FREE MUSIC THEORY",
+          "#18 LEARN FREE MUSIC THEORY",
+          "#11 LEARN FREE MUSIC THEORY"
+        ],
+        "answerIndex": 0,
+        "explanation": "The best matching title for video 10 is \"#10 LEARN FREE MUSIC THEORY\"."
+      },
+      {
+        "id": "uyS9nqkeJe4-topic-11",
+        "question": "Video 11 in this playlist focuses on which concept?",
+        "options": [
+          "#44 LEARN FREE MUSIC THEORY",
+          "#45 LEARN FREE MUSIC THEORY",
+          "#27 LEARN FREE MUSIC THEORY",
+          "#11 LEARN FREE MUSIC THEORY"
+        ],
+        "answerIndex": 3,
+        "explanation": "Video 11 focuses on \"#11 LEARN FREE MUSIC THEORY\" from \"#11 LEARN FREE MUSIC THEORY\"."
+      },
+      {
+        "id": "HrPfW7f3i0o-topic-12",
+        "question": "What is the likely lesson focus of playlist video 12?",
+        "options": [
+          "#33 LEARN FREE MUSIC THEORY",
+          "#47 LEARN FREE MUSIC THEORY",
+          "#40 LEARN FREE MUSIC THEORY",
+          "#12 LEARN FREE MUSIC THEORY"
+        ],
+        "answerIndex": 3,
+        "explanation": "Playlist video 12 highlights \"#12 LEARN FREE MUSIC THEORY\"."
+      },
+      {
+        "id": "FmqZH7nEqvs-topic-13",
+        "question": "In video 13, what is the main topic?",
+        "options": [
+          "#26 LEARN FREE MUSIC THEORY",
+          "#13 CIRCLE OF FIFTHS, EASY STEP BY STEP GUIDE",
+          "#50 EXAM 3; LEARN FREE MUSIC THEORY",
+          "#9 LEARN FREE MUSIC THEORY"
+        ],
+        "answerIndex": 1,
+        "explanation": "Video 13 is \"#13 CIRCLE OF FIFTHS, EASY STEP BY STEP GUIDE\", which focuses on \"#13 CIRCLE OF FIFTHS, EASY STEP BY STEP GUIDE\"."
+      },
+      {
+        "id": "TvJ_C-lcKZk-topic-14",
+        "question": "Which title best matches video 14?",
+        "options": [
+          "#14 LEARN FREE MUSIC THEORY",
+          "#19 LEARN FREE MUSIC THEORY",
+          "#17 LEARN FREE MUSIC THEORY",
+          "#15 LEARN FREE MUSIC THEORY"
+        ],
+        "answerIndex": 0,
+        "explanation": "The best matching title for video 14 is \"#14 LEARN FREE MUSIC THEORY\"."
+      },
+      {
+        "id": "G_Bexj-emYo-topic-15",
+        "question": "Video 15 in this playlist focuses on which concept?",
+        "options": [
+          "#39 LEARN FREE MUSIC THEORY",
+          "#15 LEARN FREE MUSIC THEORY",
+          "#17 LEARN FREE MUSIC THEORY",
+          "#1 LEARN FREE MUSIC THEORY"
+        ],
+        "answerIndex": 1,
+        "explanation": "Video 15 focuses on \"#15 LEARN FREE MUSIC THEORY\" from \"#15 LEARN FREE MUSIC THEORY\"."
+      },
+      {
+        "id": "vQ4VOB9X4T8-topic-16",
+        "question": "What is the likely lesson focus of playlist video 16?",
+        "options": [
+          "#16 LEARN FREE MUSIC THEORY",
+          "#35 LEARN FREE MUSIC THEORY",
+          "#11 LEARN FREE MUSIC THEORY",
+          "#5 LEARN FREE MUSIC THEORY"
+        ],
+        "answerIndex": 0,
+        "explanation": "Playlist video 16 highlights \"#16 LEARN FREE MUSIC THEORY\"."
+      },
+      {
+        "id": "2_Z73-rMZLw-topic-17",
+        "question": "In video 17, what is the main topic?",
+        "options": [
+          "#2 LEARN FREE MUSIC THEORY",
+          "#33 LEARN FREE MUSIC THEORY",
+          "#26 LEARN FREE MUSIC THEORY",
+          "#17 LEARN FREE MUSIC THEORY"
+        ],
+        "answerIndex": 3,
+        "explanation": "Video 17 is \"#17 LEARN FREE MUSIC THEORY\", which focuses on \"#17 LEARN FREE MUSIC THEORY\"."
+      },
+      {
+        "id": "JKl8m3TRGjM-topic-18",
+        "question": "Which title best matches video 18?",
+        "options": [
+          "#3 LEARN FREE MUSIC THEORY",
+          "#45 LEARN FREE MUSIC THEORY",
+          "#18 LEARN FREE MUSIC THEORY",
+          "#7 LEARN FREE MUSIC THEORY"
+        ],
+        "answerIndex": 2,
+        "explanation": "The best matching title for video 18 is \"#18 LEARN FREE MUSIC THEORY\"."
+      },
+      {
+        "id": "97SY3wNIh0w-topic-19",
+        "question": "Video 19 in this playlist focuses on which concept?",
+        "options": [
+          "#38 LEARN FREE MUSIC THEORY",
+          "#19 LEARN FREE MUSIC THEORY",
+          "#28 LEARN FREE MUSIC THEORY",
+          "#31 LEARN FREE MUSIC THEORY"
+        ],
+        "answerIndex": 1,
+        "explanation": "Video 19 focuses on \"#19 LEARN FREE MUSIC THEORY\" from \"#19 LEARN FREE MUSIC THEORY\"."
+      },
+      {
+        "id": "p6oFUudkXw8-topic-20",
+        "question": "What is the likely lesson focus of playlist video 20?",
+        "options": [
+          "#26 LEARN FREE MUSIC THEORY",
+          "#14 LEARN FREE MUSIC THEORY",
+          "#20 LEARN FREE MUSIC THEORY",
+          "#37 LEARN FREE MUSIC THEORY"
+        ],
+        "answerIndex": 2,
+        "explanation": "Playlist video 20 highlights \"#20 LEARN FREE MUSIC THEORY\"."
+      },
+      {
+        "id": "sThqUhBGIk4-topic-21",
+        "question": "In video 21, what is the main topic?",
+        "options": [
+          "#15 LEARN FREE MUSIC THEORY",
+          "#33 LEARN FREE MUSIC THEORY",
+          "#21 LEARN FREE MUSIC THEORY",
+          "#5 LEARN FREE MUSIC THEORY"
+        ],
+        "answerIndex": 2,
+        "explanation": "Video 21 is \"#21 LEARN FREE MUSIC THEORY\", which focuses on \"#21 LEARN FREE MUSIC THEORY\"."
+      },
+      {
+        "id": "oX9N9ee6i4g-topic-22",
+        "question": "Which title best matches video 22?",
+        "options": [
+          "#17 LEARN FREE MUSIC THEORY",
+          "#2 LEARN FREE MUSIC THEORY",
+          "#22 LEARN FREE MUSIC THEORY",
+          "#37 LEARN FREE MUSIC THEORY"
+        ],
+        "answerIndex": 2,
+        "explanation": "The best matching title for video 22 is \"#22 LEARN FREE MUSIC THEORY\"."
+      },
+      {
+        "id": "l6YDxtJKXYk-topic-23",
+        "question": "Video 23 in this playlist focuses on which concept?",
+        "options": [
+          "#4 LEARN FREE MUSIC THEORY",
+          "#2 LEARN FREE MUSIC THEORY",
+          "#11 LEARN FREE MUSIC THEORY",
+          "#23 of LEARN FREE MUSIC THEORY"
+        ],
+        "answerIndex": 3,
+        "explanation": "Video 23 focuses on \"#23 of LEARN FREE MUSIC THEORY\" from \"Level 1 Theory Exam: #23 of LEARN FREE MUSIC THEORY\"."
+      },
+      {
+        "id": "Y8aTqCjdf_8-topic-24",
+        "question": "What is the likely lesson focus of playlist video 24?",
+        "options": [
+          "#14 LEARN FREE MUSIC THEORY",
+          "#46 LEARN FREE MUSIC THEORY",
+          "#32 LEARN FREE MUSIC THEORY",
+          "#24 LEARN FREE MUSIC THEORY"
+        ],
+        "answerIndex": 3,
+        "explanation": "Playlist video 24 highlights \"#24 LEARN FREE MUSIC THEORY\"."
+      },
+      {
+        "id": "4q7rCvlfXSc-topic-25",
+        "question": "In video 25, what is the main topic?",
+        "options": [
+          "#25 LEARN FREE MUSIC THEORY",
+          "#35 LEARN FREE MUSIC THEORY",
+          "#20 LEARN FREE MUSIC THEORY",
+          "#4 LEARN FREE MUSIC THEORY"
+        ],
+        "answerIndex": 0,
+        "explanation": "Video 25 is \"#25 LEARN FREE MUSIC THEORY\", which focuses on \"#25 LEARN FREE MUSIC THEORY\"."
+      },
+      {
+        "id": "cv29oRl8TJE-topic-26",
+        "question": "Which title best matches video 26?",
+        "options": [
+          "#14 LEARN FREE MUSIC THEORY",
+          "#40 LEARN FREE MUSIC THEORY",
+          "#37 LEARN FREE MUSIC THEORY",
+          "#26 LEARN FREE MUSIC THEORY"
+        ],
+        "answerIndex": 3,
+        "explanation": "The best matching title for video 26 is \"#26 LEARN FREE MUSIC THEORY\"."
+      },
+      {
+        "id": "JZHT4T6KFog-topic-27",
+        "question": "Video 27 in this playlist focuses on which concept?",
+        "options": [
+          "#38 LEARN FREE MUSIC THEORY",
+          "#27 LEARN FREE MUSIC THEORY",
+          "#29 LEARN FREE MUSIC THEORY",
+          "#13 CIRCLE OF FIFTHS, EASY STEP BY STEP GUIDE"
+        ],
+        "answerIndex": 1,
+        "explanation": "Video 27 focuses on \"#27 LEARN FREE MUSIC THEORY\" from \"#27 LEARN FREE MUSIC THEORY\"."
+      },
+      {
+        "id": "jl8lSHLHDcA-topic-28",
+        "question": "What is the likely lesson focus of playlist video 28?",
+        "options": [
+          "#27 LEARN FREE MUSIC THEORY",
+          "#31 LEARN FREE MUSIC THEORY",
+          "#28 LEARN FREE MUSIC THEORY",
+          "#9 LEARN FREE MUSIC THEORY"
+        ],
+        "answerIndex": 2,
+        "explanation": "Playlist video 28 highlights \"#28 LEARN FREE MUSIC THEORY\"."
+      },
+      {
+        "id": "EQOd1tFMuZw-topic-29",
+        "question": "In video 29, what is the main topic?",
+        "options": [
+          "#36 LEARN FREE MUSIC THEORY",
+          "#50 EXAM 3; LEARN FREE MUSIC THEORY",
+          "#6 LEARN FREE MUSIC THEORY",
+          "#29 LEARN FREE MUSIC THEORY"
+        ],
+        "answerIndex": 3,
+        "explanation": "Video 29 is \"#29 LEARN FREE MUSIC THEORY\", which focuses on \"#29 LEARN FREE MUSIC THEORY\"."
+      },
+      {
+        "id": "iCZbsbKNOd0-topic-30",
+        "question": "Which title best matches video 30?",
+        "options": [
+          "#4 LEARN FREE MUSIC THEORY",
+          "#10 LEARN FREE MUSIC THEORY",
+          "#30 EXAM 2; LEARN FREE MUSIC THEORY",
+          "#24 LEARN FREE MUSIC THEORY"
+        ],
+        "answerIndex": 2,
+        "explanation": "The best matching title for video 30 is \"#30 EXAM 2; LEARN FREE MUSIC THEORY\"."
+      },
+      {
+        "id": "vptuCRanvYM-topic-31",
+        "question": "Video 31 in this playlist focuses on which concept?",
+        "options": [
+          "#31 LEARN FREE MUSIC THEORY",
+          "#10 LEARN FREE MUSIC THEORY",
+          "#17 LEARN FREE MUSIC THEORY",
+          "#19 LEARN FREE MUSIC THEORY"
+        ],
+        "answerIndex": 0,
+        "explanation": "Video 31 focuses on \"#31 LEARN FREE MUSIC THEORY\" from \"#31 LEARN FREE MUSIC THEORY\"."
+      },
+      {
+        "id": "dSHi4EYDBtk-topic-32",
+        "question": "What is the likely lesson focus of playlist video 32?",
+        "options": [
+          "#12 LEARN FREE MUSIC THEORY",
+          "#28 LEARN FREE MUSIC THEORY",
+          "#36 LEARN FREE MUSIC THEORY",
+          "#32 LEARN FREE MUSIC THEORY"
+        ],
+        "answerIndex": 3,
+        "explanation": "Playlist video 32 highlights \"#32 LEARN FREE MUSIC THEORY\"."
+      },
+      {
+        "id": "BK70VujV5Yc-topic-33",
+        "question": "In video 33, what is the main topic?",
+        "options": [
+          "#17 LEARN FREE MUSIC THEORY",
+          "#23 of LEARN FREE MUSIC THEORY",
+          "#21 LEARN FREE MUSIC THEORY",
+          "#33 LEARN FREE MUSIC THEORY"
+        ],
+        "answerIndex": 3,
+        "explanation": "Video 33 is \"#33 LEARN FREE MUSIC THEORY\", which focuses on \"#33 LEARN FREE MUSIC THEORY\"."
+      },
+      {
+        "id": "7MEDIVCnAbk-topic-34",
+        "question": "Which title best matches video 34?",
+        "options": [
+          "#39 LEARN FREE MUSIC THEORY",
+          "#37 LEARN FREE MUSIC THEORY",
+          "#29 LEARN FREE MUSIC THEORY",
+          "#34 LEARN FREE MUSIC THEORY"
+        ],
+        "answerIndex": 3,
+        "explanation": "The best matching title for video 34 is \"#34 LEARN FREE MUSIC THEORY\"."
+      },
+      {
+        "id": "xLkHRav8Ots-topic-35",
+        "question": "Video 35 in this playlist focuses on which concept?",
+        "options": [
+          "#17 LEARN FREE MUSIC THEORY",
+          "#35 LEARN FREE MUSIC THEORY",
+          "#9 LEARN FREE MUSIC THEORY",
+          "#28 LEARN FREE MUSIC THEORY"
+        ],
+        "answerIndex": 1,
+        "explanation": "Video 35 focuses on \"#35 LEARN FREE MUSIC THEORY\" from \"#35 LEARN FREE MUSIC THEORY\"."
+      },
+      {
+        "id": "-_u1mSA1hgU-topic-36",
+        "question": "What is the likely lesson focus of playlist video 36?",
+        "options": [
+          "#33 LEARN FREE MUSIC THEORY",
+          "#36 LEARN FREE MUSIC THEORY",
+          "#32 LEARN FREE MUSIC THEORY",
+          "#40 LEARN FREE MUSIC THEORY"
+        ],
+        "answerIndex": 1,
+        "explanation": "Playlist video 36 highlights \"#36 LEARN FREE MUSIC THEORY\"."
+      },
+      {
+        "id": "cg3RkwkRxKU-topic-37",
+        "question": "In video 37, what is the main topic?",
+        "options": [
+          "#47 LEARN FREE MUSIC THEORY",
+          "#19 LEARN FREE MUSIC THEORY",
+          "#41 LEARN FREE MUSIC THEORY",
+          "#37 LEARN FREE MUSIC THEORY"
+        ],
+        "answerIndex": 3,
+        "explanation": "Video 37 is \"#37 LEARN FREE MUSIC THEORY\", which focuses on \"#37 LEARN FREE MUSIC THEORY\"."
+      },
+      {
+        "id": "ffP3QLnl4Gw-topic-38",
+        "question": "Which title best matches video 38?",
+        "options": [
+          "#50 EXAM 3; LEARN FREE MUSIC THEORY",
+          "#39 LEARN FREE MUSIC THEORY",
+          "#38 LEARN FREE MUSIC THEORY",
+          "#27 LEARN FREE MUSIC THEORY"
+        ],
+        "answerIndex": 2,
+        "explanation": "The best matching title for video 38 is \"#38 LEARN FREE MUSIC THEORY\"."
+      },
+      {
+        "id": "rYLWYdEK5q0-topic-39",
+        "question": "Video 39 in this playlist focuses on which concept?",
+        "options": [
+          "#39 LEARN FREE MUSIC THEORY",
+          "#5 LEARN FREE MUSIC THEORY",
+          "#45 LEARN FREE MUSIC THEORY",
+          "#23 of LEARN FREE MUSIC THEORY"
+        ],
+        "answerIndex": 0,
+        "explanation": "Video 39 focuses on \"#39 LEARN FREE MUSIC THEORY\" from \"#39 LEARN FREE MUSIC THEORY\"."
+      },
+      {
+        "id": "u0oF_UqWgnA-topic-40",
+        "question": "What is the likely lesson focus of playlist video 40?",
+        "options": [
+          "#33 LEARN FREE MUSIC THEORY",
+          "#40 LEARN FREE MUSIC THEORY",
+          "#29 LEARN FREE MUSIC THEORY",
+          "#21 LEARN FREE MUSIC THEORY"
+        ],
+        "answerIndex": 1,
+        "explanation": "Playlist video 40 highlights \"#40 LEARN FREE MUSIC THEORY\"."
+      },
+      {
+        "id": "4gbM4g7DfW4-topic-41",
+        "question": "In video 41, what is the main topic?",
+        "options": [
+          "#13 CIRCLE OF FIFTHS, EASY STEP BY STEP GUIDE",
+          "#41 LEARN FREE MUSIC THEORY",
+          "#23 of LEARN FREE MUSIC THEORY",
+          "#48 LEARN FREE MUSIC THEORY"
+        ],
+        "answerIndex": 1,
+        "explanation": "Video 41 is \"#41 LEARN FREE MUSIC THEORY\", which focuses on \"#41 LEARN FREE MUSIC THEORY\"."
+      },
+      {
+        "id": "R0jXqj_rxjY-topic-42",
+        "question": "Which title best matches video 42?",
+        "options": [
+          "#42 LEARN FREE MUSIC THEORY",
+          "#47 LEARN FREE MUSIC THEORY",
+          "#39 LEARN FREE MUSIC THEORY",
+          "#46 LEARN FREE MUSIC THEORY"
+        ],
+        "answerIndex": 0,
+        "explanation": "The best matching title for video 42 is \"#42 LEARN FREE MUSIC THEORY\"."
+      },
+      {
+        "id": "0_waBZA7N48-topic-43",
+        "question": "Video 43 in this playlist focuses on which concept?",
+        "options": [
+          "#20 LEARN FREE MUSIC THEORY",
+          "#43 LEARN FREE MUSIC THEORY",
+          "#26 LEARN FREE MUSIC THEORY",
+          "#25 LEARN FREE MUSIC THEORY"
+        ],
+        "answerIndex": 1,
+        "explanation": "Video 43 focuses on \"#43 LEARN FREE MUSIC THEORY\" from \"#43 LEARN FREE MUSIC THEORY\"."
+      },
+      {
+        "id": "y_bAcIpuFiI-topic-44",
+        "question": "What is the likely lesson focus of playlist video 44?",
+        "options": [
+          "#15 LEARN FREE MUSIC THEORY",
+          "#44 LEARN FREE MUSIC THEORY",
+          "#25 LEARN FREE MUSIC THEORY",
+          "#3 LEARN FREE MUSIC THEORY"
+        ],
+        "answerIndex": 1,
+        "explanation": "Playlist video 44 highlights \"#44 LEARN FREE MUSIC THEORY\"."
+      },
+      {
+        "id": "ppPzJFhXOYA-topic-45",
+        "question": "In video 45, what is the main topic?",
+        "options": [
+          "#4 LEARN FREE MUSIC THEORY",
+          "#24 LEARN FREE MUSIC THEORY",
+          "#20 LEARN FREE MUSIC THEORY",
+          "#45 LEARN FREE MUSIC THEORY"
+        ],
+        "answerIndex": 3,
+        "explanation": "Video 45 is \"#45 LEARN FREE MUSIC THEORY\", which focuses on \"#45 LEARN FREE MUSIC THEORY\"."
+      },
+      {
+        "id": "DknluRxWUWM-topic-46",
+        "question": "Which title best matches video 46?",
+        "options": [
+          "#9 LEARN FREE MUSIC THEORY",
+          "#46 LEARN FREE MUSIC THEORY",
+          "#11 LEARN FREE MUSIC THEORY",
+          "#4 LEARN FREE MUSIC THEORY"
+        ],
+        "answerIndex": 1,
+        "explanation": "The best matching title for video 46 is \"#46 LEARN FREE MUSIC THEORY\"."
+      },
+      {
+        "id": "n4_esL0y0lA-topic-47",
+        "question": "Video 47 in this playlist focuses on which concept?",
+        "options": [
+          "#47 LEARN FREE MUSIC THEORY",
+          "#42 LEARN FREE MUSIC THEORY",
+          "#29 LEARN FREE MUSIC THEORY",
+          "#23 of LEARN FREE MUSIC THEORY"
+        ],
+        "answerIndex": 0,
+        "explanation": "Video 47 focuses on \"#47 LEARN FREE MUSIC THEORY\" from \"#47 LEARN FREE MUSIC THEORY\"."
+      },
+      {
+        "id": "sRjzKhaj0Hk-topic-48",
+        "question": "What is the likely lesson focus of playlist video 48?",
+        "options": [
+          "#45 LEARN FREE MUSIC THEORY",
+          "#48 LEARN FREE MUSIC THEORY",
+          "#47 LEARN FREE MUSIC THEORY",
+          "#37 LEARN FREE MUSIC THEORY"
+        ],
+        "answerIndex": 1,
+        "explanation": "Playlist video 48 highlights \"#48 LEARN FREE MUSIC THEORY\"."
+      },
+      {
+        "id": "K4n7YPdguKs-topic-49",
+        "question": "In video 49, what is the main topic?",
+        "options": [
+          "#42 LEARN FREE MUSIC THEORY",
+          "#18 LEARN FREE MUSIC THEORY",
+          "#9 LEARN FREE MUSIC THEORY",
+          "#49 LEARN FREE MUSIC THEORY"
+        ],
+        "answerIndex": 3,
+        "explanation": "Video 49 is \"#49 LEARN FREE MUSIC THEORY\", which focuses on \"#49 LEARN FREE MUSIC THEORY\"."
+      },
+      {
+        "id": "PbWzyzSu2lE-topic-50",
+        "question": "Which title best matches video 50?",
+        "options": [
+          "#35 LEARN FREE MUSIC THEORY",
+          "#27 LEARN FREE MUSIC THEORY",
+          "#50 EXAM 3; LEARN FREE MUSIC THEORY",
+          "#48 LEARN FREE MUSIC THEORY"
+        ],
+        "answerIndex": 2,
+        "explanation": "The best matching title for video 50 is \"#50 EXAM 3; LEARN FREE MUSIC THEORY\"."
+      }
+    ],
+    "PLDaNGknQ_wTh3eXyjB0smdEYSvqa-wJ1_": [
+      {
+        "id": "exTi3gFBVFU-topic-1",
+        "question": "In video 1, what is the main topic?",
+        "options": [
+          "Intervals",
+          "Everything You Need To Know in 5 minutes",
+          "How to Play Swing Rhythms",
+          "Everything You Need to Know in 9 minutes"
+        ],
+        "answerIndex": 3,
+        "explanation": "Video 1 is \"Note Naming: Everything You Need to Know in 9 minutes\", which focuses on \"Everything You Need to Know in 9 minutes\"."
+      },
+      {
+        "id": "ZJIbf4nMG3Y-topic-2",
+        "question": "Which title best matches video 2?",
+        "options": [
+          "Everything you need to know in 7 minutes",
+          "Everything You Need to Know",
+          "Everything You Need To Know",
+          "The Fundamentals"
+        ],
+        "answerIndex": 3,
+        "explanation": "The best matching title for video 2 is \"Rhythms: The Fundamentals\"."
+      },
+      {
+        "id": "QaasT7UTfV4-topic-3",
+        "question": "Video 3 in this playlist focuses on which concept?",
+        "options": [
+          "The Fundamentals",
+          "Sight Singing, Relative Pitch, and Solfege",
+          "Everything you need to know in 7 minutes",
+          "Why Mnemonics Are The Worst Way To Learn Note Names"
+        ],
+        "answerIndex": 3,
+        "explanation": "Video 3 focuses on \"Why Mnemonics Are The Worst Way To Learn Note Names\" from \"Why Mnemonics Are The Worst Way To Learn Note Names\"."
+      },
+      {
+        "id": "bY-GXTxNa4o-topic-4",
+        "question": "What is the likely lesson focus of playlist video 4?",
+        "options": [
+          "Musical Modes Demonstrated Using Improvisation #musictheory #jazzimprovisation #modes #dorianmode",
+          "Everything You Need to Know in 9 minutes",
+          "Everything You Need To Know in 7 Minutes",
+          "Everything You Need to Know"
+        ],
+        "answerIndex": 2,
+        "explanation": "Playlist video 4 highlights \"Everything You Need To Know in 7 Minutes\"."
+      },
+      {
+        "id": "v44NY4fyxHA-topic-5",
+        "question": "In video 5, what is the main topic?",
+        "options": [
+          "Everything You Need To Know in 5 minutes",
+          "Everything you need to know in 7 minutes",
+          "Why Mnemonics Are The Worst Way To Learn Note Names",
+          "The Circle of Fifths vs Fourths"
+        ],
+        "answerIndex": 1,
+        "explanation": "Video 5 is \"Major scales: Everything you need to know in 7 minutes\", which focuses on \"Everything you need to know in 7 minutes\"."
+      },
+      {
+        "id": "b61ksoMCetc-topic-6",
+        "question": "Which title best matches video 6?",
+        "options": [
+          "Everything You Need To Know",
+          "Eighth Notes, Triplets, & Sixteenths",
+          "Blues Improvisation",
+          "Musical Modes Demonstrated Using Improvisation #musictheory #jazzimprovisation #modes #dorianmode"
+        ],
+        "answerIndex": 1,
+        "explanation": "The best matching title for video 6 is \"Eighth Notes, Triplets, & Sixteenths: Everything You Need to Know\"."
+      },
+      {
+        "id": "M6588OmxV6Q-topic-7",
+        "question": "Video 7 in this playlist focuses on which concept?",
+        "options": [
+          "Modifying the Major Scale to Make New Scales",
+          "Musical Modes Demonstrated Using Improvisation #musictheory #jazzimprovisation #modes #dorianmode",
+          "Everything You Need To Know",
+          "Everything You Need To Know in 6 minutes"
+        ],
+        "answerIndex": 2,
+        "explanation": "Video 7 focuses on \"Everything You Need To Know\" from \"Key Signatures: Everything You Need To Know\"."
+      },
+      {
+        "id": "rxaNn1gXg-E-topic-8",
+        "question": "What is the likely lesson focus of playlist video 8?",
+        "options": [
+          "What is concert pitch, and why and how do instruments transpose?",
+          "Everything You Need To Know In 7 minutes",
+          "Intervals",
+          "Everything You Need To Know"
+        ],
+        "answerIndex": 1,
+        "explanation": "Playlist video 8 highlights \"Everything You Need To Know In 7 minutes\"."
+      },
+      {
+        "id": "-CgdOWOFbUU-topic-9",
+        "question": "In video 9, what is the main topic?",
+        "options": [
+          "Everything You Need to Know",
+          "Intervals",
+          "The Fundamentals",
+          "Sight Singing, Relative Pitch, and Solfege"
+        ],
+        "answerIndex": 0,
+        "explanation": "Video 9 is \"Time Signatures: Everything You Need to Know\", which focuses on \"Everything You Need to Know\"."
+      },
+      {
+        "id": "8RPggfJ5bjQ-topic-10",
+        "question": "Which title best matches video 10?",
+        "options": [
+          "How to Begin Blues Improvisation",
+          "Everything You Need to Know",
+          "Everything You Need to Know in 9 minutes",
+          "Intervals"
+        ],
+        "answerIndex": 3,
+        "explanation": "The best matching title for video 10 is \"Intervals: Part I - Half of Everything You Need To Know In 7 Minutes\"."
+      },
+      {
+        "id": "1JpUVETI60w-topic-11",
+        "question": "Video 11 in this playlist focuses on which concept?",
+        "options": [
+          "Everything You Need to Know",
+          "Intervals",
+          "How to Begin Blues Improvisation"
+        ],
+        "answerIndex": 1,
+        "explanation": "Video 11 focuses on \"Intervals\" from \"Intervals: Part II - The Other Half of Everything You Need To Know In 8 Minutes\"."
+      },
+      {
+        "id": "-KzJFzb-HQg-topic-12",
+        "question": "What is the likely lesson focus of playlist video 12?",
+        "options": [
+          "Everything You Need To Know.",
+          "The Circle of Fifths vs Fourths",
+          "How to Begin Blues Improvisation",
+          "Intervals"
+        ],
+        "answerIndex": 0,
+        "explanation": "Playlist video 12 highlights \"Everything You Need To Know.\"."
+      },
+      {
+        "id": "O43EBVnwNvo-topic-13",
+        "question": "In video 13, what is the main topic?",
+        "options": [
+          "Everything You Need to Know",
+          "Eighth Notes, Triplets, & Sixteenths",
+          "Everything You Need To Know in 5 minutes",
+          "Sight Singing, Relative Pitch, and Solfege"
+        ],
+        "answerIndex": 0,
+        "explanation": "Video 13 is \"Circle of Fifths: Everything You Need to Know\", which focuses on \"Everything You Need to Know\"."
+      },
+      {
+        "id": "gT0Fawqrs8w-topic-14",
+        "question": "Which title best matches video 14?",
+        "options": [
+          "Blues Improvisation",
+          "How to Begin Blues Improvisation",
+          "Everything You Need To Know in 6 minutes",
+          "The Circle of Fifths vs Fourths"
+        ],
+        "answerIndex": 3,
+        "explanation": "The best matching title for video 14 is \"The Circle of Fifths vs Fourths\"."
+      },
+      {
+        "id": "1t1FNTQHpAc-topic-15",
+        "question": "Video 15 in this playlist focuses on which concept?",
+        "options": [
+          "What is concert pitch, and why and how do instruments transpose?",
+          "Everything You Need To Know In 7 minutes",
+          "Da Capo, Dal Segno, and More",
+          "Everything You Need To Know in 7 Minutes"
+        ],
+        "answerIndex": 0,
+        "explanation": "Video 15 focuses on \"What is concert pitch, and why and how do instruments transpose?\" from \"What is concert pitch, and why and how do instruments transpose?\"."
+      },
+      {
+        "id": "jFguFm7hdho-topic-16",
+        "question": "What is the likely lesson focus of playlist video 16?",
+        "options": [
+          "Everything You Need to Know",
+          "Blues Improvisation",
+          "Everything You Need To Know.",
+          "Everything You Need To Know in 5 minutes"
+        ],
+        "answerIndex": 3,
+        "explanation": "Playlist video 16 highlights \"Everything You Need To Know in 5 minutes\"."
+      },
+      {
+        "id": "DpcBCYbVyxg-topic-17",
+        "question": "In video 17, what is the main topic?",
+        "options": [
+          "Sight Singing, Relative Pitch, and Solfege",
+          "How to Begin Blues Improvisation",
+          "Everything You Need To Know in 7 Minutes",
+          "Modifying the Major Scale to Make New Scales"
+        ],
+        "answerIndex": 3,
+        "explanation": "Video 17 is \"Modifying the Major Scale to Make New Scales\", which focuses on \"Modifying the Major Scale to Make New Scales\"."
+      },
+      {
+        "id": "xY9Q0R0G2jM-topic-18",
+        "question": "Which title best matches video 18?",
+        "options": [
+          "How to Begin Blues Improvisation",
+          "Eighth Notes, Triplets, & Sixteenths",
+          "Everything You Need To Know in 6 minutes",
+          "The Fundamentals"
+        ],
+        "answerIndex": 2,
+        "explanation": "The best matching title for video 18 is \"Key Signatures - Everything You Need To Know in 6 minutes\"."
+      },
+      {
+        "id": "-G-GMaGR5rQ-topic-19",
+        "question": "Video 19 in this playlist focuses on which concept?",
+        "options": [
+          "Everything You Need To Know In 7 minutes",
+          "How to Begin Blues Improvisation",
+          "Da Capo, Dal Segno, and More",
+          "How Improvisers Improvise"
+        ],
+        "answerIndex": 3,
+        "explanation": "Video 19 focuses on \"How Improvisers Improvise\" from \"How Improvisers Improvise\"."
+      },
+      {
+        "id": "Xb5s9qEnvuM-topic-20",
+        "question": "What is the likely lesson focus of playlist video 20?",
+        "options": [
+          "Everything you need to know in 7 minutes",
+          "How to Begin Blues Improvisation",
+          "Everything You Need To Know",
+          "Everything You Need To Know In 7 minutes"
+        ],
+        "answerIndex": 1,
+        "explanation": "Playlist video 20 highlights \"How to Begin Blues Improvisation\"."
+      },
+      {
+        "id": "5odKJVONLpM-topic-21",
+        "question": "In video 21, what is the main topic?",
+        "options": [
+          "Musical Modes Demonstrated Using Improvisation #musictheory #jazzimprovisation #modes #dorianmode",
+          "What is concert pitch, and why and how do instruments transpose?",
+          "How to Begin Blues Improvisation",
+          "Everything you need to know in 7 minutes"
+        ],
+        "answerIndex": 2,
+        "explanation": "Video 21 is \"How to Begin Blues Improvisation\", which focuses on \"How to Begin Blues Improvisation\"."
+      },
+      {
+        "id": "BI8HpvkXWeM-topic-22",
+        "question": "Which title best matches video 22?",
+        "options": [
+          "Everything You Need To Know.",
+          "How to Begin Blues Improvisation",
+          "Blues Improvisation",
+          "Everything You Need To Know in 5 minutes"
+        ],
+        "answerIndex": 2,
+        "explanation": "The best matching title for video 22 is \"Blues Improvisation: Beginner to Master\"."
+      },
+      {
+        "id": "ah7CUFMFnJM-topic-23",
+        "question": "Video 23 in this playlist focuses on which concept?",
+        "options": [
+          "The Fundamentals",
+          "How to Play Swing Rhythms",
+          "Intervals",
+          "Blues Improvisation"
+        ],
+        "answerIndex": 1,
+        "explanation": "Video 23 focuses on \"How to Play Swing Rhythms\" from \"How to Play Swing Rhythms\"."
+      },
+      {
+        "id": "-S2D-BxSkBU-topic-24",
+        "question": "What is the likely lesson focus of playlist video 24?",
+        "options": [
+          "Sight Singing, Relative Pitch, and Solfege",
+          "Everything you need to know in 7 minutes",
+          "How to Begin Blues Improvisation",
+          "Everything You Need to Know in 9 minutes"
+        ],
+        "answerIndex": 0,
+        "explanation": "Playlist video 24 highlights \"Sight Singing, Relative Pitch, and Solfege\"."
+      },
+      {
+        "id": "_lmW65ZdIkw-topic-25",
+        "question": "In video 25, what is the main topic?",
+        "options": [
+          "Eighth Notes, Triplets, & Sixteenths",
+          "Da Capo, Dal Segno, and More",
+          "Everything You Need To Know.",
+          "How to Begin Blues Improvisation"
+        ],
+        "answerIndex": 1,
+        "explanation": "Video 25 is \"Da Capo, Dal Segno, and More: Repeat Signs In Music\", which focuses on \"Da Capo, Dal Segno, and More\"."
+      },
+      {
+        "id": "XlpcgCSgyOo-topic-26",
+        "question": "Which title best matches video 26?",
+        "options": [
+          "Everything You Need To Know.",
+          "Everything You Need to Know",
+          "Everything You Need To Know in 7 Minutes",
+          "Musical Modes Demonstrated Using Improvisation #musictheory #jazzimprovisation #modes #dorianmode"
+        ],
+        "answerIndex": 3,
+        "explanation": "The best matching title for video 26 is \"Musical Modes Demonstrated Using Improvisation #musictheory #jazzimprovisation #modes #dorianmode\"."
+      }
+    ]
+  }
+}

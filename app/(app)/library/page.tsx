@@ -17,18 +17,34 @@ export default function LibraryPage() {
   const [search, setSearch] = useState("")
   const [sort, setSort] = useState<SortOption>("recent")
 
-  function refresh() {
-    setPlaylists(getLibrary())
+  async function refresh() {
+    const local = getLibrary()
+    try {
+      const response = await fetch("/api/course-playlists", { cache: "no-store" })
+      const data = await response.json()
+      const global = Array.isArray(data.playlists) ? (data.playlists as LibraryPlaylist[]) : []
+      const merged = [...local, ...global]
+      const seen = new Set<string>()
+      setPlaylists(
+        merged.filter((playlist) => {
+          if (!playlist?.id || seen.has(playlist.id)) return false
+          seen.add(playlist.id)
+          return true
+        })
+      )
+    } catch {
+      setPlaylists(local)
+    }
   }
 
   useEffect(() => {
     migrateFromOldStorage()
-    refresh()
+    void refresh()
   }, [])
 
   function handleRemove(id: string) {
     removePlaylist(id)
-    refresh()
+    void refresh()
   }
 
   const filtered = useMemo(() => {

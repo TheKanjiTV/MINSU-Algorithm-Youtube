@@ -22,6 +22,11 @@ export interface LibraryPlaylist {
   lastVideoId?: string // resume from here
   completedVideoIds: string[] // video IDs marked as done
   skippedVideoIds?: string[] // video IDs marked as irrelevant
+  courseCategorySlug?: string
+  courseCategoryLabel?: string
+  courseTopicSlug?: string
+  courseTopicLabel?: string
+  tags?: string[]
 }
 
 // ── Notes Types ──

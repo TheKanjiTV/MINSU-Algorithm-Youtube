@@ -1,3 +1,2 @@
 ignoredBuiltDependencies:
-  - '@clerk/shared'
   - sharp

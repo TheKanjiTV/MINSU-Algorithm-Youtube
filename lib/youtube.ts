@@ -9,10 +9,16 @@ export function extractPlaylistId(input: string): string | null {
   const trimmed = input.trim()
 
   // Direct ID (no URL)
-  if (/^PL[\w-]{16,}$/.test(trimmed)) return trimmed
+  if (/^[\w-]{10,}$/.test(trimmed)) return trimmed
+
+  if (trimmed.startsWith("list=")) {
+    return trimmed.slice(5) || null
+  }
+
+  const withProtocol = /^https?:\/\//i.test(trimmed) ? trimmed : `https://${trimmed}`
 
   try {
-    const url = new URL(trimmed)
+    const url = new URL(withProtocol)
     return url.searchParams.get("list")
   } catch {
     return null
@@ -53,10 +59,7 @@ async function fetchAllPlaylistItems(playlistId: string): Promise<any[]> {
 
   do {
     const url = `${API_BASE}/playlistItems?part=snippet,contentDetails&maxResults=50&playlistId=${playlistId}&key=${API_KEY}${pageToken ? `&pageToken=${pageToken}` : ""}`
-    const res = await fetch(url)
-    const data = await res.json()
-
-    if (data.error) throw new Error(data.error.message || "YouTube API error")
+    const data = await fetchYouTubeJson(url)
     if (!data.items) break
 
     items.push(...data.items)
@@ -74,8 +77,7 @@ async function fetchVideoDurations(videoIds: string[]): Promise<Record<string, s
   for (let i = 0; i < videoIds.length; i += 50) {
     const batch = videoIds.slice(i, i + 50).join(",")
     const url = `${API_BASE}/videos?part=contentDetails&id=${batch}&key=${API_KEY}`
-    const res = await fetch(url)
-    const data = await res.json()
+    const data = await fetchYouTubeJson(url)
 
     if (data.items) {
       for (const item of data.items) {
@@ -90,9 +92,12 @@ async function fetchVideoDurations(videoIds: string[]): Promise<Record<string, s
 // ── Main: fetch full playlist details ──
 
 export async function fetchPlaylistDetails(playlistId: string): Promise<Omit<LibraryPlaylist, "addedAt" | "completedVideoIds">> {
+  if (!API_KEY) {
+    throw new Error("Missing YouTube API key. Set NEXT_PUBLIC_YOUTUBE_API_KEY in Yt-Learn/.env.local and restart the app.")
+  }
+
   // Step 1: Playlist metadata
-  const metaRes = await fetch(`${API_BASE}/playlists?part=snippet&id=${playlistId}&key=${API_KEY}`)
-  const metaData = await metaRes.json()
+  const metaData = await fetchYouTubeJson(`${API_BASE}/playlists?part=snippet&id=${playlistId}&key=${API_KEY}`)
 
   if (!metaData.items?.length) throw new Error("Playlist not found")
   const info = metaData.items[0].snippet
@@ -126,4 +131,16 @@ export async function fetchPlaylistDetails(playlistId: string): Promise<Omit<Lib
     totalVideos: videos.length,
     totalDuration: formatTotalDuration(videos),
   }
+}
+
+async function fetchYouTubeJson(url: string): Promise<any> {
+  const res = await fetch(url)
+  const data = await res.json()
+
+  if (!res.ok || data?.error) {
+    const message = data?.error?.message || `YouTube API request failed (${res.status})`
+    throw new Error(message)
+  }
+
+  return data
 }

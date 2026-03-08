@@ -1,0 +1,38 @@
+[
+  {
+    "id": "a74555f3-aad9-49b1-a17a-027e148c4b8e",
+    "name": "Kenji Yonaha",
+    "email": "kenjiyonaha11@gmail.com",
+    "passwordHash": "$2b$10$0R1GpV8SL61j6niwaV8SruHVyHoL67jxvkegzpyxDTyb7VKLI/nem",
+    "role": "student",
+    "roleId": "MBC2025-00996",
+    "createdAt": "2026-02-14T11:46:55.318Z"
+  },
+  {
+    "id": "c3476fa0-4ad7-472a-a8d6-c6eaded51fd3",
+    "name": "MBC-00001",
+    "email": "knjiynh11@gmail.com",
+    "passwordHash": "$2b$10$rHPX6dlmhWVNhG2EPcAbYe2PZjl9tH87ccEfmMWiPWchM1gAZSsdW",
+    "role": "professor",
+    "roleId": "MBC-00001",
+    "createdAt": "2026-02-20T16:38:32.516Z"
+  },
+  {
+    "id": "ce50fc81-7f8d-4f36-a0d6-f722d8675847",
+    "name": "Alessandra",
+    "email": "alessrivano@gmail.com",
+    "passwordHash": "$2b$10$Hm1DdEu1R5bCpYHewMLSyuLuIrzkKhYQ6jS23q5GlcPiw1Lhw5QaS",
+    "role": "student",
+    "roleId": "MBC2024-00004",
+    "createdAt": "2026-02-22T10:28:14.489Z"
+  },
+  {
+    "id": "2c1ed167-87a1-4594-9f50-79ee1670cb4d",
+    "name": "PROF-10000",
+    "email": "knjiynh26@gmail.com",
+    "passwordHash": "$2b$10$dg24Cyzha3NWJeyzKWXhqONQPAOI7cS06Z5XtWkarIqRMoDTC11hy",
+    "role": "professor",
+    "roleId": "PROF-10000",
+    "createdAt": "2026-03-03T05:41:05.765Z"
+  }
+]

@@ -62,8 +62,7 @@ export default function NotesPage() {
   }
 
   return (
-    <div className="flex h-[calc(100vh-3.5rem)]">
-      {/* Sidebar */}
+    <div className="flex h-[calc(100vh-7rem)]">
       <div className="w-64 lg:w-72 shrink-0 hidden sm:block">
         <NotesSidebar
           notes={notes}
@@ -73,7 +72,6 @@ export default function NotesPage() {
         />
       </div>
 
-      {/* Editor */}
       <div className="flex-1 min-w-0">
         {activeNote ? (
           <NoteEditor
@@ -89,7 +87,6 @@ export default function NotesPage() {
         )}
       </div>
 
-      {/* Mobile: floating create button */}
       <div className="sm:hidden fixed bottom-4 right-4">
         <Button onClick={handleCreate} size="icon" className="rounded-full h-12 w-12 shadow-lg">
           <PlusCircle className="h-5 w-5" />

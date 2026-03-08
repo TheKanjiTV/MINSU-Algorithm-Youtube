@@ -1,0 +1,57 @@
+{
+  "teams": [
+    {
+      "id": "6c8f37e1-b82c-4286-829d-5305ac9a50bc",
+      "name": "BSIT-2F3",
+      "professorId": "2c1ed167-87a1-4594-9f50-79ee1670cb4d",
+      "professorName": "PROF-10000",
+      "joinCode": "4J9P5K",
+      "quizMode": "generated",
+      "manualQuestions": [],
+      "createdAt": "2026-03-03T05:46:09.539Z",
+      "updatedAt": "2026-03-03T05:47:04.263Z",
+      "playlistId": "PLYzt2_QLeO9U5aX8f_SAaE62nTMBwo1Z5",
+      "playlistTitle": "Diva Tutorials - Sound Design Channel"
+    },
+    {
+      "id": "f697d534-8d0f-42a9-9dd2-f81b0d9c387e",
+      "name": "UI/UX DESIGNERS",
+      "professorId": "c3476fa0-4ad7-472a-a8d6-c6eaded51fd3",
+      "professorName": "MBC-00001",
+      "joinCode": "AK46YI",
+      "quizMode": "generated",
+      "manualQuestions": [],
+      "createdAt": "2026-02-21T14:15:30.353Z",
+      "updatedAt": "2026-02-21T14:15:50.468Z",
+      "playlistId": "PLXC_gcsKLD6n7p6tHPBxsKjN5hA_quaPI",
+      "playlistTitle": "Web Design 101: Free Full Course"
+    },
+    {
+      "id": "a2979768-a5cb-4cf1-bc6d-7e91741d6c6f",
+      "name": "BSIT-2F3",
+      "professorId": "c3476fa0-4ad7-472a-a8d6-c6eaded51fd3",
+      "professorName": "MBC-00001",
+      "joinCode": "IZ2JNU",
+      "quizMode": "generated",
+      "manualQuestions": [],
+      "createdAt": "2026-02-21T13:38:17.845Z",
+      "updatedAt": "2026-02-21T13:38:17.845Z"
+    }
+  ],
+  "memberships": [
+    {
+      "teamId": "a2979768-a5cb-4cf1-bc6d-7e91741d6c6f",
+      "userId": "a74555f3-aad9-49b1-a17a-027e148c4b8e",
+      "userName": "Kenji Yonaha",
+      "userEmail": "kenjiyonaha11@gmail.com",
+      "joinedAt": "2026-02-22T00:27:06.590Z"
+    },
+    {
+      "teamId": "6c8f37e1-b82c-4286-829d-5305ac9a50bc",
+      "userId": "a74555f3-aad9-49b1-a17a-027e148c4b8e",
+      "userName": "Kenji Yonaha",
+      "userEmail": "kenjiyonaha11@gmail.com",
+      "joinedAt": "2026-03-03T05:53:01.888Z"
+    }
+  ]
+}

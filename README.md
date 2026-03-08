@@ -55,6 +55,43 @@ Welcome to **YouTube Learning Platform**, a structured and interactive way to le
    pnpm dev
 5. Open http://localhost:3000 in your browser.
 
+## Offline Support (Service Worker)
+
+This app now includes a custom Service Worker (`public/sw.js`) for app-shell offline support.
+
+### What is cached
+- App shell/static build assets (`/_next/static`, `.js`, `.css`, `.html`) with cache-first strategy.
+- Navigation/document responses for visited pages.
+- Images and fonts with cache-first strategy and cache-size trimming.
+
+### What is not cached
+- API routes (`/api/*`) are intentionally excluded from caching.
+
+### Update behavior
+- When a new Service Worker is installed and waiting, the app shows:
+  - **Update available**
+  - Buttons: **Update** and **Later**
+- Clicking **Update** sends `SKIP_WAITING` to the waiting worker and reloads when activated.
+
+### Build and test offline
+1. Build and run production:
+   ```bash
+   npm run build
+   npm run start
+   ```
+2. Open the app once while online (to warm caches).
+3. In DevTools, set Network to **Offline**.
+4. Reload:
+   - Visited app-shell pages should still load.
+   - Unknown uncached navigations fall back to `offline.html`.
+
+### Test update flow
+1. Start production (`npm run start`) from a built version.
+2. Change a visible string in the app and run `npm run build` again.
+3. Refresh the app.
+4. Confirm **Update available** appears.
+5. Click **Update** and verify the page reloads with new content.
+
 🛡️ Security
 Environment Variables: Sensitive keys like API keys are stored in .env files.
 Authentication: User authentication is handled securely using Clerk.

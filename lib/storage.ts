@@ -34,9 +34,18 @@ function get<T>(key: string, fallback: T): T {
   }
 }
 
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return typeof value === "object" && value !== null
+}
+
 function set(key: string, value: unknown) {
   if (typeof window === "undefined") return
-  localStorage.setItem(key, JSON.stringify(value))
+  try {
+    localStorage.setItem(key, JSON.stringify(value))
+    window.dispatchEvent(new CustomEvent("ytlearn:storage", { detail: key }))
+  } catch {
+    // Ignore storage quota/serialization errors so UI won't crash.
+  }
 }
 
 function uid(): string {
@@ -46,7 +55,40 @@ function uid(): string {
 // ── Library CRUD ──
 
 export function getLibrary(): LibraryPlaylist[] {
-  return get<LibraryPlaylist[]>(KEYS.library, [])
+  const raw = get<LibraryPlaylist[]>(KEYS.library, [])
+  return raw
+    .filter((item) => isRecord(item))
+    .map((playlist) => {
+      const videos = Array.isArray(playlist.videos)
+        ? playlist.videos.filter((video) => isRecord(video)).map((video, index) => ({
+            id: String(video.id || ""),
+            title: String(video.title || "Untitled video"),
+            thumbnailUrl: String(video.thumbnailUrl || ""),
+            duration: String(video.duration || "0:00"),
+            position: typeof video.position === "number" ? video.position : index + 1,
+          }))
+        : []
+
+      return {
+        ...(playlist as LibraryPlaylist),
+        id: String(playlist.id || ""),
+        title: String(playlist.title || "Untitled Playlist"),
+        description: String(playlist.description || ""),
+        channelTitle: String(playlist.channelTitle || "YouTube Channel"),
+        thumbnailUrl: String(playlist.thumbnailUrl || ""),
+        videos,
+        totalVideos: typeof playlist.totalVideos === "number" ? playlist.totalVideos : videos.length,
+        totalDuration: String(playlist.totalDuration || ""),
+        addedAt: String(playlist.addedAt || new Date().toISOString()),
+        completedVideoIds: Array.isArray(playlist.completedVideoIds)
+          ? playlist.completedVideoIds.filter((id) => typeof id === "string")
+          : [],
+        skippedVideoIds: Array.isArray(playlist.skippedVideoIds)
+          ? playlist.skippedVideoIds.filter((id) => typeof id === "string")
+          : [],
+      }
+    })
+    .filter((playlist) => playlist.id.length > 0)
 }
 
 export function getPlaylist(id: string): LibraryPlaylist | undefined {
@@ -71,6 +113,29 @@ export function removePlaylist(id: string) {
 export function updatePlaylist(id: string, updates: Partial<LibraryPlaylist>) {
   const lib = getLibrary().map((p) => (p.id === id ? { ...p, ...updates } : p))
   set(KEYS.library, lib)
+}
+
+export function getCoursePlaylists(categorySlug: string, topicSlug: string): LibraryPlaylist[] {
+  return getLibrary().filter(
+    (playlist) =>
+      playlist.courseCategorySlug === categorySlug && playlist.courseTopicSlug === topicSlug
+  )
+}
+
+export function getImportedCoursePlaylists(): LibraryPlaylist[] {
+  return getLibrary().filter((playlist) => playlist.courseCategorySlug && playlist.courseTopicSlug)
+}
+
+export function resetAllPlaylistProgress() {
+  const lib = getLibrary().map((playlist) => ({
+    ...playlist,
+    completedVideoIds: [],
+    skippedVideoIds: [],
+    lastVideoId: undefined,
+    lastWatchedAt: undefined,
+  }))
+  set(KEYS.library, lib)
+  set(KEYS.videoPositions, {})
 }
 
 export function toggleVideoComplete(playlistId: string, videoId: string) {
@@ -106,7 +171,18 @@ export function setLastWatched(playlistId: string, videoId: string) {
 // ── Notes CRUD ──
 
 export function getNotes(): NoteFile[] {
-  return get<NoteFile[]>(KEYS.notes, [])
+  const raw = get<NoteFile[]>(KEYS.notes, [])
+  return raw
+    .filter((item) => isRecord(item))
+    .map((note) => ({
+      ...(note as NoteFile),
+      id: String(note.id || uid()),
+      title: String(note.title || "Untitled Note"),
+      content: String(note.content || ""),
+      playlistId: typeof note.playlistId === "string" ? note.playlistId : undefined,
+      createdAt: String(note.createdAt || new Date().toISOString()),
+      updatedAt: String(note.updatedAt || new Date().toISOString()),
+    }))
 }
 
 export function getNote(id: string): NoteFile | undefined {

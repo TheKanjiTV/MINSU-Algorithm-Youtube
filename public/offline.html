@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Offline | YTLearn</title>
+    <style>
+      :root { color-scheme: light; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        font-family: Inter, Segoe UI, Arial, sans-serif;
+        background: #f8fafc;
+        color: #0f172a;
+      }
+      .card {
+        max-width: 520px;
+        margin: 24px;
+        padding: 28px;
+        border: 1px solid #e2e8f0;
+        border-radius: 16px;
+        background: #ffffff;
+        box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08);
+      }
+      h1 { margin: 0 0 10px; font-size: 24px; }
+      p { margin: 0 0 12px; line-height: 1.6; color: #334155; }
+      button {
+        border: 1px solid #16a34a;
+        background: #16a34a;
+        color: white;
+        padding: 10px 14px;
+        border-radius: 10px;
+        font-weight: 600;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1>You are offline</h1>
+      <p>The app shell is available, but this page needs internet for fresh data.</p>
+      <p>Reconnect and try again.</p>
+      <button type="button" onclick="location.reload()">Try again</button>
+    </div>
+  </body>
+  </html>

@@ -1,5 +1,10 @@
+import { fileURLToPath } from "url"
+
+const outputFileTracingRoot = fileURLToPath(new URL("../", import.meta.url))
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  outputFileTracingRoot,
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -7,16 +12,17 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
-    remotePatterns: [
+    // Avoid server-side upstream timeouts when external image hosts are unreachable.
+    unoptimized: true,
+  },
+  webpack: (config) => {
+    config.ignoreWarnings = [
+      ...(config.ignoreWarnings || []),
       {
-        protocol: "https",
-        hostname: "i.ytimg.com",
+        message: /multiple modules with names that only differ in casing/i,
       },
-      {
-        protocol: "https",
-        hostname: "img.youtube.com",
-      },
-    ],
+    ]
+    return config
   },
 }
 
