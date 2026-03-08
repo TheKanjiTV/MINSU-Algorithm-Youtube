@@ -1,12 +1,12 @@
-# YT-Learn-MINSU
+<<<<<<< HEAD
+![MIT License](https://img.shields.io/badge/license-MIT-green)
+# 🎓 YouTube Learning Platform
 
-A Next.js learning platform that turns YouTube playlists into a guided course experience for students and professors.
+Welcome to **YouTube Learning Platform**, a structured and interactive way to learn from YouTube playlists. This platform transforms YouTube videos into a course-like experience with features like progress tracking, quizzes, assignments, and documentation resources. 🚀
 
-## Overview
+---
 
-YT-Learn-MINSU helps learners follow playlists with structure, progress tracking, quizzes, notes, and certificates. It also includes role-based access for students and professors, plus team features for classroom use.
-
-## Core Features
+## 🌟 Features
 
 - Role-based auth with `next-auth` (credentials login, optional Google login)
 - Playlist import from YouTube and structured watch flow
