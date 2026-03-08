@@ -355,9 +355,9 @@ export function StudentTeamsPanel() {
   }
 
   return (
-    <Card>
+    <Card className="border-slate-300">
       <CardHeader className="pb-2">
-        <CardTitle className="text-base">Join Groupchat / Teams</CardTitle>
+        <CardTitle className="text-base font-semibold text-slate-900">Join Groupchat / Teams</CardTitle>
       </CardHeader>
       <CardContent className="space-y-3">
         <div className="flex gap-2">
@@ -365,27 +365,28 @@ export function StudentTeamsPanel() {
             placeholder="Paste team link or join code"
             value={joinValue}
             onChange={(event) => setJoinValue(event.target.value)}
+            className="text-sm"
           />
           <Button onClick={joinTeamNow} disabled={joining || !joinValue.trim()}>
             {joining ? "Joining..." : "Join"}
           </Button>
         </div>
-        {message ? <p className="text-xs text-muted-foreground">{message}</p> : null}
+        {message ? <p className="text-xs text-slate-700">{message}</p> : null}
 
         <div className="space-y-2">
           {teams.length === 0 ? (
-            <p className="text-sm text-muted-foreground">No joined teams yet.</p>
+            <p className="text-sm text-slate-700">No joined teams yet.</p>
           ) : (
             teams.map((team) => (
-              <div key={team.id} className="rounded-lg border p-3 flex items-center justify-between gap-3">
+              <div key={team.id} className="rounded-lg border border-slate-300 bg-white p-3 flex items-center justify-between gap-3">
                 <div>
-                  <p className="text-sm font-medium">{team.name}</p>
-                  <p className="text-xs text-muted-foreground">
+                  <p className="text-sm font-semibold text-slate-900">{team.name}</p>
+                  <p className="text-xs text-slate-700">
                     {team.playlistTitle ? `Assessment: ${team.playlistTitle}` : "No assessment yet"}
                   </p>
                 </div>
                 <Link href={`/teams/${team.id}`}>
-                  <Button size="sm">Open Assessment</Button>
+                  <Button size="sm" className="font-semibold">Open Assessment</Button>
                 </Link>
               </div>
             ))

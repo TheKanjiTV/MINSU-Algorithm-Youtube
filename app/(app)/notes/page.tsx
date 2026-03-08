@@ -46,7 +46,11 @@ export default function NotesPage() {
   if (notes.length === 0) {
     return (
       <div className="container px-4 py-6">
-        <h1 className="text-2xl font-bold mb-6">Notes</h1>
+        <section className="rounded-2xl border bg-gradient-to-r from-amber-50 to-orange-50 p-5 shadow-sm mb-6">
+          <p className="text-xs font-semibold uppercase tracking-wide text-orange-700">Workspace</p>
+          <h1 className="text-2xl font-bold mt-1">Notes</h1>
+          <p className="text-sm text-muted-foreground mt-1">Capture key ideas while studying your playlists.</p>
+        </section>
         <EmptyState
           icon={StickyNote}
           title="No notes yet"
@@ -62,8 +66,13 @@ export default function NotesPage() {
   }
 
   return (
-    <div className="flex h-[calc(100vh-7rem)]">
-      <div className="w-64 lg:w-72 shrink-0 hidden sm:block">
+    <div className="h-[calc(100vh-7rem)] flex flex-col">
+      <section className="rounded-2xl border bg-gradient-to-r from-amber-50 to-orange-50 p-4 shadow-sm mb-3">
+        <p className="text-xs font-semibold uppercase tracking-wide text-orange-700">Workspace</p>
+        <h1 className="text-2xl font-bold mt-1">Notes</h1>
+      </section>
+      <div className="flex flex-1 min-h-0 rounded-xl border bg-card overflow-hidden">
+        <div className="w-64 lg:w-72 shrink-0 hidden sm:block border-r">
         <NotesSidebar
           notes={notes}
           activeNoteId={activeNoteId}
@@ -72,19 +81,20 @@ export default function NotesPage() {
         />
       </div>
 
-      <div className="flex-1 min-w-0">
-        {activeNote ? (
-          <NoteEditor
-            key={activeNote.id}
-            note={activeNote}
-            onDelete={handleDelete}
-            onUpdate={handleUpdate}
-          />
-        ) : (
-          <div className="flex items-center justify-center h-full text-muted-foreground">
-            Select a note to start editing
-          </div>
-        )}
+        <div className="flex-1 min-w-0">
+          {activeNote ? (
+            <NoteEditor
+              key={activeNote.id}
+              note={activeNote}
+              onDelete={handleDelete}
+              onUpdate={handleUpdate}
+            />
+          ) : (
+            <div className="flex items-center justify-center h-full text-muted-foreground">
+              Select a note to start editing
+            </div>
+          )}
+        </div>
       </div>
 
       <div className="sm:hidden fixed bottom-4 right-4">

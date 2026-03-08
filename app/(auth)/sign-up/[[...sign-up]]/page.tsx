@@ -5,12 +5,13 @@ import Link from "next/link"
 import { useRouter } from "next/navigation"
 import { signIn } from "next-auth/react"
 
-type Role = "student" | "professor"
+type Role = "student" | "professor" | "user"
 
 export default function SignUpPage() {
   const router = useRouter()
   const googleEnabled = process.env.NEXT_PUBLIC_ENABLE_GOOGLE_AUTH === "true"
-  const [role, setRole] = useState<Role>("student")
+  const [role, setRole] = useState<Role>("user")
+  const [name, setName] = useState("")
   const [roleId, setRoleId] = useState("")
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
@@ -26,11 +27,11 @@ export default function SignUpPage() {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        name: roleId.trim() || email.split("@")[0] || "User",
+        name: name.trim() || email.split("@")[0] || "User",
         email,
         password,
         role,
-        roleId,
+        roleId: role === "user" ? "" : roleId,
       }),
     })
 
@@ -45,7 +46,7 @@ export default function SignUpPage() {
       redirect: false,
       callbackUrl: "/homepage",
       role,
-      roleId,
+      roleId: role === "user" ? "" : roleId,
       email,
       password,
     })
@@ -81,51 +82,76 @@ export default function SignUpPage() {
         <h1>Sign up with email</h1>
 
         <form className="auth-ui-form" onSubmit={onSubmit} autoComplete="off">
-          <label>
-            <div className="auth-ui-role">
-              <label>
-                <input
-                  type="radio"
-                  name="role"
-                  value="student"
-                  checked={role === "student"}
-                  onChange={() => setRole("student")}
-                />
-                Student ID
-              </label>
-              <label>
-                <input
-                  type="radio"
-                  name="role"
-                  value="professor"
-                  checked={role === "professor"}
-                  onChange={() => setRole("professor")}
-                />
-                Professor ID
-              </label>
-            </div>
-          </label>
+          <div className="auth-ui-role">
+            <label>
+              <input
+                type="radio"
+                name="role"
+                value="user"
+                checked={role === "user"}
+                onChange={() => setRole("user")}
+              />
+              User
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="role"
+                value="student"
+                checked={role === "student"}
+                onChange={() => setRole("student")}
+              />
+              Student ID
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="role"
+                value="professor"
+                checked={role === "professor"}
+                onChange={() => setRole("professor")}
+              />
+              Professor ID
+            </label>
+          </div>
 
           <label>
-            {role === "student" ? "Student ID" : "Professor ID"}
+            Username
             <input
               type="text"
-              placeholder={role === "student" ? "MBC2025-00996" : "PROF-10021"}
-              autoComplete="off"
+              placeholder="your username"
+              autoComplete="name"
               autoCorrect="off"
               autoCapitalize="none"
               spellCheck={false}
-              value={roleId}
-              onChange={(event) => setRoleId(event.target.value)}
+              value={name}
+              onChange={(event) => setName(event.target.value)}
               required
             />
           </label>
+
+          {role !== "user" ? (
+            <label>
+              {role === "student" ? "Student ID" : "Professor ID"}
+              <input
+                type="text"
+                placeholder={role === "student" ? "MBC2025-00996" : "PROF-10021"}
+                autoComplete="off"
+                autoCorrect="off"
+                autoCapitalize="none"
+                spellCheck={false}
+                value={roleId}
+                onChange={(event) => setRoleId(event.target.value)}
+                required
+              />
+            </label>
+          ) : null}
 
           <label>
             Email
             <input
               type="email"
-              placeholder="Email"
+              placeholder="you@example.com"
               autoComplete="off"
               autoCorrect="off"
               autoCapitalize="none"
@@ -149,6 +175,10 @@ export default function SignUpPage() {
             />
           </label>
 
+          <div className="auth-ui-inline-link">
+            <Link href="/forgot-password">Forgot password?</Link>
+          </div>
+
           {error ? <p className="auth-ui-error">{error}</p> : null}
 
           <button type="submit" className="auth-ui-primary" disabled={loading}>
@@ -167,6 +197,7 @@ export default function SignUpPage() {
             disabled={!googleEnabled}
             onClick={() => signIn("google", { callbackUrl: "/homepage" })}
             title={googleEnabled ? "Continue with Google" : "Google login not available"}
+            aria-label={googleEnabled ? "Continue with Google" : "Google login not available"}
           >
             <svg className="auth-ui-social-google-icon" viewBox="0 0 24 24" aria-hidden="true">
               <path
@@ -187,12 +218,6 @@ export default function SignUpPage() {
               />
             </svg>
           </button>
-          <button type="button" className="auth-ui-social-btn" disabled title="Coming soon">
-            f
-          </button>
-          <button type="button" className="auth-ui-social-btn" disabled title="Coming soon">
-            A
-          </button>
         </div>
 
         <p className="auth-ui-terms">
@@ -200,7 +225,7 @@ export default function SignUpPage() {
         </p>
 
         <div className="auth-ui-footer">
-          Already have an account? <Link href="/sign-in">Log in</Link>
+          Already have an account? <Link href="/sign-in">Login</Link>
         </div>
       </section>
     </main>

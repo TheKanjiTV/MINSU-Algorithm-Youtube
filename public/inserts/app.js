@@ -774,15 +774,23 @@ mountRow("rec");
 mountRow("recent");
 mountRow("trend");
 
-document.querySelectorAll(".row__nav").forEach(btn => {
-  btn.addEventListener("click", () => {
-    const row = btn.getAttribute("data-row");
-    const dir = Number(btn.getAttribute("data-dir"));
-    const list = getRowList(row);
-    if(!list.length) return;
-    rowCursor[row] = (rowCursor[row] || 0) + (dir > 0 ? 1 : -1);
-    mountRow(row);
-  });
+function shiftRow(row, dir){
+  if(!row) return;
+  const list = getRowList(row);
+  if(!list.length) return;
+  rowCursor[row] = (rowCursor[row] || 0) + (dir > 0 ? 1 : -1);
+  mountRow(row);
+}
+
+document.addEventListener("click", (e) => {
+  const btn = e.target.closest(".row__nav");
+  if(!btn) return;
+  const row = btn.getAttribute("data-row");
+  const dir = Number(btn.getAttribute("data-dir")) || 0;
+  if(!row || !dir) return;
+  e.preventDefault();
+  e.stopPropagation();
+  shiftRow(row, dir);
 });
 
 const topics = [
@@ -798,15 +806,29 @@ const topics = [
   "Node.js"
 ];
 
+const topicLinks = {
+  "Graphic Design": "/courses/design/graphic-design",
+  "PHP (programming language)": "/courses/development/programming-languages",
+  "Adobe Photoshop": "/courses/design/graphic-design",
+  "Laravel": "/courses/development/web-development",
+  "Adobe Illustrator": "/courses/design/illustration",
+  "Web Development": "/courses/development/web-development",
+  "MySQL": "/courses/development/database-design-and-development",
+  "JavaScript": "/courses/development/programming-languages",
+  "SQL": "/courses/development/database-design-and-development",
+  "Node.js": "/courses/development/programming-languages"
+};
+
 const topicChips = document.getElementById("topicChips");
 if(topicChips){
   topics.forEach(t => {
-    const b = document.createElement("button");
-    b.type = "button";
-    b.className = "chip";
-    b.textContent = t;
-    b.addEventListener("click", () => toast("Topic: " + t));
-    topicChips.appendChild(b);
+    const link = document.createElement("a");
+    link.className = "chip";
+    link.textContent = t;
+    link.href = topicLinks[t] || "/courses/development/web-development";
+    link.target = "_top";
+    link.setAttribute("aria-label", `Open topic ${t}`);
+    topicChips.appendChild(link);
   });
 }
 

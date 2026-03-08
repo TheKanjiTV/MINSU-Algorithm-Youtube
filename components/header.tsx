@@ -172,7 +172,8 @@ export function Header() {
 
   const initials = user.name?.charAt(0) || user.email?.charAt(0) || "U"
   const headerName = user.roleId || user.name || "User"
-  const idLabel = user.role === "professor" ? "Professor ID" : "Student ID"
+  const idLabel =
+    user.role === "professor" ? "Professor ID" : user.role === "student" ? "Student ID" : "User ID"
   const profileMenuContent = (
     <DropdownMenuContent
       className="w-[280px] max-h-[72vh] overflow-auto rounded-2xl border border-[#d1d5db] bg-[#f3f4f6] p-3 shadow-xl"

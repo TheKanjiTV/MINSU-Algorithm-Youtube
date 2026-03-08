@@ -22,23 +22,26 @@ export function PlaylistCard({ playlist, onRemove }: PlaylistCardProps) {
   const tags = (playlist.tags?.length ? playlist.tags : derivePlaylistTags(playlist)).slice(0, 3)
 
   return (
-    <Card className="overflow-hidden group">
-      <div className="relative aspect-video bg-muted">
+    <Card className="group flex h-full flex-col overflow-hidden rounded-2xl border-slate-300 bg-white shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md">
+      <div className="relative aspect-video bg-slate-100">
         {playlist.thumbnailUrl && !thumbnailFailed ? (
           <Image
             src={playlist.thumbnailUrl}
             alt={playlist.title}
             fill
-            className="object-cover"
+            className="object-cover transition-transform duration-300 group-hover:scale-[1.03]"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             unoptimized
             onError={() => setThumbnailFailed(true)}
           />
         ) : (
-          <div className="flex items-center justify-center h-full">
-            <Play className="h-10 w-10 text-muted-foreground" />
+          <div className="flex items-center justify-center h-full bg-gradient-to-br from-slate-200 to-slate-300">
+            <Play className="h-10 w-10 text-slate-600" />
           </div>
         )}
+        <div className="absolute left-3 top-3 rounded-full border border-white/70 bg-black/45 px-2.5 py-1 text-[11px] font-semibold text-white backdrop-blur">
+          {playlist.totalVideos} videos
+        </div>
         {onRemove ? (
           <Button
             variant="destructive"
@@ -53,36 +56,38 @@ export function PlaylistCard({ playlist, onRemove }: PlaylistCardProps) {
           </Button>
         ) : null}
       </div>
-      <CardContent className="p-4">
+      <CardContent className="flex h-full flex-col p-4">
         <Link href={`/watch/${playlist.id}`} className="hover:underline">
-          <h3 className="font-semibold text-sm line-clamp-2 mb-1">{playlist.title}</h3>
+          <h3 className="mb-1 line-clamp-2 min-h-[44px] text-[17px] font-bold leading-tight text-slate-900">{playlist.title}</h3>
         </Link>
-        <p className="text-xs text-muted-foreground mb-3">
+        <p className="mb-3 min-h-[40px] line-clamp-2 text-sm text-slate-600">
           {playlist.channelTitle} &middot; {playlist.totalVideos} videos &middot; {playlist.totalDuration}
         </p>
-        {tags.length > 0 ? (
-          <div className="mb-3 flex flex-wrap gap-1.5">
-            {tags.map((tag) => (
-              <span
-                key={`${playlist.id}-${tag}`}
-                className="rounded-full border border-border bg-muted px-2 py-0.5 text-[10px] font-medium text-muted-foreground"
-              >
-                #{tag}
-              </span>
-            ))}
-          </div>
-        ) : null}
+        <div className="mb-3 min-h-[24px]">
+          {tags.length > 0 ? (
+            <div className="flex flex-wrap gap-1.5">
+              {tags.map((tag) => (
+                <span
+                  key={`${playlist.id}-${tag}`}
+                  className="rounded-full border border-slate-300 bg-slate-100 px-2 py-0.5 text-[10px] font-semibold text-slate-700"
+                >
+                  #{tag}
+                </span>
+              ))}
+            </div>
+          ) : null}
+        </div>
         <div className="space-y-1.5">
-          <div className="flex justify-between text-xs">
-            <span className="text-muted-foreground">
+          <div className="flex justify-between text-sm">
+            <span className="text-slate-700">
               {completedCount}/{playlist.totalVideos} completed
             </span>
-            <span className="font-medium">{progress}%</span>
+            <span className="font-semibold text-slate-900">{progress}%</span>
           </div>
-          <Progress value={progress} className="h-1.5" />
+          <Progress value={progress} className="h-2" />
         </div>
-        <Link href={`/watch/${playlist.id}`}>
-          <Button variant="secondary" size="sm" className="w-full mt-3">
+        <Link href={`/watch/${playlist.id}`} className="mt-3">
+          <Button variant="secondary" size="sm" className="w-full font-semibold">
             {completedCount > 0 ? "Continue" : "Start Learning"}
           </Button>
         </Link>

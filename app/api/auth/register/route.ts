@@ -7,7 +7,7 @@ export async function POST(request: Request) {
       name?: string
       email?: string
       password?: string
-      role?: "student" | "professor"
+      role?: "student" | "professor" | "user"
       roleId?: string
     }
 
@@ -20,6 +20,11 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "Name, email, and password are required." }, { status: 400 })
     }
 
+    const role = body.role || "user"
+    if ((role === "student" || role === "professor") && !roleId) {
+      return NextResponse.json({ error: "Role ID is required for student/professor accounts." }, { status: 400 })
+    }
+
     if (password.length < 6) {
       return NextResponse.json({ error: "Password must be at least 6 characters." }, { status: 400 })
     }
@@ -28,7 +33,7 @@ export async function POST(request: Request) {
       name,
       email,
       password,
-      role: body.role,
+      role,
       roleId,
     })
 

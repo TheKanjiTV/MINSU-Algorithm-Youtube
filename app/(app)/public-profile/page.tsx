@@ -11,7 +11,7 @@ export default function PublicProfilePage() {
   if (!user) return null
 
   const initials = user.name?.charAt(0) || user.email?.charAt(0) || "U"
-  const roleText = user.role === "professor" ? "Professor" : "Student"
+  const roleText = user.role === "professor" ? "Professor" : user.role === "student" ? "Student" : "User"
 
   return (
     <div className="container max-w-3xl px-4 py-6">

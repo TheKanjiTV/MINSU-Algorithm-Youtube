@@ -5,12 +5,12 @@ import Link from "next/link"
 import { useRouter } from "next/navigation"
 import { signIn } from "next-auth/react"
 
-type Role = "student" | "professor"
+type Role = "student" | "professor" | "user"
 
 export default function SignInPage() {
   const router = useRouter()
   const googleEnabled = process.env.NEXT_PUBLIC_ENABLE_GOOGLE_AUTH === "true"
-  const [role, setRole] = useState<Role>("student")
+  const [role, setRole] = useState<Role>("user")
   const [roleId, setRoleId] = useState("")
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
@@ -26,7 +26,7 @@ export default function SignInPage() {
       redirect: false,
       callbackUrl: "/homepage",
       role,
-      roleId,
+      roleId: role === "user" ? "" : roleId,
       email,
       password,
     })
@@ -59,8 +59,8 @@ export default function SignInPage() {
         </div>
       </header>
       <section className="auth-ui-card">
-        <h1>Log in with your ID</h1>
-        <p>Choose your role and enter your ID plus email and password.</p>
+        <h1>Log in to your account</h1>
+        <p>Choose your role and enter your account details.</p>
 
         <form className="auth-ui-form" onSubmit={onSubmit} autoComplete="on">
           {/* Autofill catcher to prevent password managers from filling role ID with email */}
@@ -85,6 +85,16 @@ export default function SignInPage() {
               <input
                 type="radio"
                 name="role"
+                value="user"
+                checked={role === "user"}
+                onChange={() => setRole("user")}
+              />
+              User
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="role"
                 value="student"
                 checked={role === "student"}
                 onChange={() => setRole("student")}
@@ -103,21 +113,24 @@ export default function SignInPage() {
             </label>
           </div>
 
-          <label>
-            {role === "student" ? "Student ID" : "Professor ID"}
-            <input
-              type="text"
-              id="role-id"
-              name="roleId"
-              placeholder={role === "student" ? "MBC2025-00996" : "PROF-10021"}
-              autoComplete="one-time-code"
-              autoCorrect="off"
-              autoCapitalize="none"
-              spellCheck={false}
-              value={roleId}
-              onChange={(event) => setRoleId(event.target.value)}
-            />
-          </label>
+          {role !== "user" ? (
+            <label>
+              {role === "student" ? "Student ID" : "Professor ID"}
+              <input
+                type="text"
+                id="role-id"
+                name="roleId"
+                placeholder={role === "student" ? "MBC2025-00996" : "PROF-10021"}
+                autoComplete="one-time-code"
+                autoCorrect="off"
+                autoCapitalize="none"
+                spellCheck={false}
+                value={roleId}
+                onChange={(event) => setRoleId(event.target.value)}
+                required
+              />
+            </label>
+          ) : null}
 
           <label>
             Email
@@ -147,6 +160,10 @@ export default function SignInPage() {
               required
             />
           </label>
+
+          <div className="auth-ui-inline-link">
+            <Link href="/forgot-password">Forgot password?</Link>
+          </div>
 
           {error ? <p className="auth-ui-error">{error}</p> : null}
 
@@ -183,7 +200,7 @@ export default function SignInPage() {
         </form>
 
         <div className="auth-ui-footer">
-          Don&apos;t have an account? <Link href="/sign-up">Sign up</Link>
+          Don&apos;t have an account? <Link href="/sign-up">Signup</Link>
         </div>
       </section>
     </main>

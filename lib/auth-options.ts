@@ -3,6 +3,12 @@ import GoogleProvider from "next-auth/providers/google"
 import CredentialsProvider from "next-auth/providers/credentials"
 import { upsertGoogleUser, verifyCredentials } from "@/lib/auth-store"
 
+const ADMIN_EMAILS = new Set(["kenjiyonaha11@gmail.com"])
+
+function isAdminEmail(email?: string | null) {
+  return Boolean(email && ADMIN_EMAILS.has(email.trim().toLowerCase()))
+}
+
 const providers: NextAuthOptions["providers"] = [
   CredentialsProvider({
     name: "Credentials",
@@ -67,6 +73,10 @@ export const authOptions: NextAuthOptions = {
           ;(user as typeof user & { role?: string; roleId?: string }).roleId = stored.roleId
         }
       }
+
+      if (isAdminEmail(user.email)) {
+        ;(user as typeof user & { role?: string }).role = "admin"
+      }
       return true
     },
     async jwt({ token, user, trigger, session }) {
@@ -78,6 +88,11 @@ export const authOptions: NextAuthOptions = {
         token.role = (user as typeof user & { role?: string }).role
         token.roleId = (user as typeof user & { roleId?: string }).roleId
       }
+
+      if (isAdminEmail(typeof token.email === "string" ? token.email : undefined)) {
+        token.role = "admin"
+      }
+
       if (trigger === "update" && session?.name) {
         token.name = session.name
       }

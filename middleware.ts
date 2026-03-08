@@ -2,7 +2,12 @@ import { withAuth } from "next-auth/middleware"
 import { NextResponse } from "next/server"
 
 const isPublicRoute = (pathname: string) => {
-  return pathname === "/" || pathname.startsWith("/sign-in") || pathname.startsWith("/sign-up")
+  return (
+    pathname === "/" ||
+    pathname.startsWith("/sign-in") ||
+    pathname.startsWith("/sign-up") ||
+    pathname.startsWith("/forgot-password")
+  )
 }
 
 export default withAuth(

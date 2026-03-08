@@ -39,9 +39,16 @@ export default function ProfilePage() {
   const isProfessor = user.role === "professor"
 
   return (
-    <div className="container px-4 py-6 max-w-3xl">
+    <div className="container px-4 py-6 max-w-4xl space-y-6">
+      <section className="rounded-2xl border bg-gradient-to-r from-cyan-50 to-slate-50 p-5 shadow-sm">
+        <p className="text-xs font-semibold uppercase tracking-wide text-cyan-700">Profile</p>
+        <h1 className="text-2xl font-bold mt-1">Learning Insights</h1>
+        <p className="text-sm text-muted-foreground mt-1">Track your progress and activity across all playlists.</p>
+      </section>
+
       {/* User info */}
-      <Card className="mb-6">
+      <Card className="overflow-hidden">
+        <div className="h-2 w-full bg-gradient-to-r from-cyan-500 via-emerald-500 to-indigo-500" />
         <CardContent className="p-6">
           <div className="flex items-center gap-4">
             <Avatar className="h-16 w-16">
@@ -63,7 +70,7 @@ export default function ProfilePage() {
         <>
       {/* Stats */}
       {stats && (
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
           <Card>
             <CardContent className="p-4 text-center">
               <BookOpen className="h-5 w-5 text-blue-500 mx-auto mb-1" />
@@ -132,7 +139,7 @@ export default function ProfilePage() {
           )}
         </CardContent>
       </Card>
-      <div className="mt-6">
+      <div>
         <StudentQuizInsights />
       </div>
         </>

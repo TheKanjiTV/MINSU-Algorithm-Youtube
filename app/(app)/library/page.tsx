@@ -77,14 +77,22 @@ export default function LibraryPage() {
   }, [playlists, search, sort])
 
   return (
-    <div className="container px-4 py-6">
-      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-6">
-        <h1 className="text-2xl font-bold">Library</h1>
-        <AddPlaylistDialog onAdded={refresh} />
-      </div>
+    <div className="container mx-auto max-w-[1400px] px-4 py-6">
+      <section className="rounded-2xl border bg-gradient-to-r from-sky-50 to-indigo-50 p-5 shadow-sm mb-6">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-wide text-sky-700">Saved playlists</p>
+            <h1 className="text-2xl font-bold mt-1">Library</h1>
+            <p className="text-sm text-muted-foreground mt-1">
+              Manage your courses, track progress, and jump back in anytime.
+            </p>
+          </div>
+          <AddPlaylistDialog onAdded={refresh} />
+        </div>
+      </section>
 
       {playlists.length > 0 && (
-        <div className="flex flex-col sm:flex-row gap-3 mb-6">
+        <div className="mb-6 flex flex-col gap-3 rounded-xl border bg-card p-3 sm:flex-row sm:p-4">
           <div className="relative flex-1">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
             <Input
@@ -95,7 +103,7 @@ export default function LibraryPage() {
             />
           </div>
           <Select value={sort} onValueChange={(v) => setSort(v as SortOption)}>
-            <SelectTrigger className="w-[180px]">
+            <SelectTrigger className="w-full sm:w-[210px]">
               <SelectValue />
             </SelectTrigger>
             <SelectContent>
@@ -119,7 +127,7 @@ export default function LibraryPage() {
       ) : filtered.length === 0 ? (
         <p className="text-center text-muted-foreground py-8">No playlists match your search.</p>
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {filtered.map((playlist) => (
             <PlaylistCard key={playlist.id} playlist={playlist} onRemove={handleRemove} />
           ))}

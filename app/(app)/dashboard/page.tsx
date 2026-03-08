@@ -55,17 +55,20 @@ export default function DashboardPage() {
 
   return (
     <div className="container px-4 py-6 space-y-6">
-      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-        <div>
-          <h1 className="text-2xl font-bold">
-            Welcome back{user?.name ? `, ${user.name.split(" ")[0]}` : ""}
-          </h1>
-          <p className="text-muted-foreground text-sm">
-            {isProfessor ? "Manage your teams and assessments." : "Pick up where you left off"}
-          </p>
+      <section className="rounded-xl border bg-white p-4">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-wide text-emerald-700">Learning hub</p>
+            <h1 className="text-xl font-semibold mt-1">
+              Welcome back{user?.name ? `, ${user.name.split(" ")[0]}` : ""}
+            </h1>
+            <p className="text-muted-foreground text-sm mt-1">
+              {isProfessor ? "Manage your teams and assessments." : "Pick up where you left off"}
+            </p>
+          </div>
+          {isProfessor ? <AddPlaylistDialog onAdded={refresh} /> : null}
         </div>
-        {isProfessor ? <AddPlaylistDialog onAdded={refresh} /> : null}
-      </div>
+      </section>
 
       {isProfessor ? <ProfessorTeamsPanel /> : <StudentTeamsPanel />}
 
@@ -80,9 +83,9 @@ export default function DashboardPage() {
       ) : (
         <>
           {continuePlaylist && (
-            <Card>
+            <Card className="border-slate-300">
               <CardHeader className="pb-3">
-                <CardTitle className="text-base flex items-center gap-2">
+                <CardTitle className="text-base font-semibold text-slate-900 flex items-center gap-2">
                   <Play className="h-4 w-4" />
                   Continue Learning
                 </CardTitle>
@@ -90,8 +93,8 @@ export default function DashboardPage() {
               <CardContent>
                 <div className="flex flex-col sm:flex-row items-start gap-4">
                   <div className="flex-1 min-w-0">
-                    <h3 className="font-semibold truncate">{continuePlaylist.title}</h3>
-                    <p className="text-sm text-muted-foreground">
+                    <h3 className="text-lg font-semibold text-slate-900 truncate">{continuePlaylist.title}</h3>
+                    <p className="text-base text-slate-700">
                       {continuePlaylist.channelTitle} &middot;{" "}
                       {continuePlaylist.completedVideoIds.length}/{continuePlaylist.totalVideos} videos
                     </p>
@@ -117,46 +120,46 @@ export default function DashboardPage() {
 
           {stats && (
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-              <Card>
+              <Card className="border-slate-300">
                 <CardContent className="p-4">
                   <div className="flex items-center gap-3">
                     <BookOpen className="h-5 w-5 text-blue-500" />
                     <div>
-                      <p className="text-2xl font-bold">{stats.totalPlaylists}</p>
-                      <p className="text-xs text-muted-foreground">Playlists</p>
+                      <p className="text-xl font-bold">{stats.totalPlaylists}</p>
+                      <p className="text-sm text-slate-700">Playlists</p>
                     </div>
                   </div>
                 </CardContent>
               </Card>
-              <Card>
+              <Card className="border-slate-300">
                 <CardContent className="p-4">
                   <div className="flex items-center gap-3">
                     <CheckCircle2 className="h-5 w-5 text-green-500" />
                     <div>
-                      <p className="text-2xl font-bold">{stats.completedVideos}</p>
-                      <p className="text-xs text-muted-foreground">Videos Done</p>
+                      <p className="text-xl font-bold">{stats.completedVideos}</p>
+                      <p className="text-sm text-slate-700">Videos Done</p>
                     </div>
                   </div>
                 </CardContent>
               </Card>
-              <Card>
+              <Card className="border-slate-300">
                 <CardContent className="p-4">
                   <div className="flex items-center gap-3">
                     <Flame className="h-5 w-5 text-orange-500" />
                     <div>
-                      <p className="text-2xl font-bold">{stats.currentStreak}</p>
-                      <p className="text-xs text-muted-foreground">Day Streak</p>
+                      <p className="text-xl font-bold">{stats.currentStreak}</p>
+                      <p className="text-sm text-slate-700">Day Streak</p>
                     </div>
                   </div>
                 </CardContent>
               </Card>
-              <Card>
+              <Card className="border-slate-300">
                 <CardContent className="p-4">
                   <div className="flex items-center gap-3">
                     <TrendingUp className="h-5 w-5 text-purple-500" />
                     <div>
-                      <p className="text-2xl font-bold">{stats.completionRate}%</p>
-                      <p className="text-xs text-muted-foreground">Completion</p>
+                      <p className="text-xl font-bold">{stats.completionRate}%</p>
+                      <p className="text-sm text-slate-700">Completion</p>
                     </div>
                   </div>
                 </CardContent>
@@ -165,16 +168,16 @@ export default function DashboardPage() {
           )}
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            <Card>
+            <Card className="border-slate-300">
               <CardHeader className="pb-3">
-                <CardTitle className="text-base flex items-center gap-2">
+                <CardTitle className="text-base font-semibold text-slate-900 flex items-center gap-2">
                   <Clock className="h-4 w-4" />
                   Recent Activity
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 {activity.length === 0 ? (
-                  <p className="text-sm text-muted-foreground">No activity yet. Start watching!</p>
+                  <p className="text-sm text-slate-700">No activity yet. Start watching!</p>
                 ) : (
                   <div className="space-y-3">
                     {activity.map((event) => (
@@ -187,8 +190,8 @@ export default function DashboardPage() {
                           {event.type === "bookmark_added" && <BookOpen className="h-4 w-4 text-orange-500" />}
                         </div>
                         <div className="min-w-0">
-                          <p className="text-sm truncate">{event.title}</p>
-                          <p className="text-xs text-muted-foreground">
+                          <p className="text-sm font-medium text-slate-900 truncate">{event.title}</p>
+                          <p className="text-sm text-slate-700">
                             {new Date(event.timestamp).toLocaleDateString()}
                           </p>
                         </div>
@@ -199,9 +202,9 @@ export default function DashboardPage() {
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="border-slate-300">
               <CardHeader className="pb-3 flex flex-row items-center justify-between">
-                <CardTitle className="text-base">Your Playlists</CardTitle>
+                <CardTitle className="text-base font-semibold text-slate-900">Your Playlists</CardTitle>
                 <Link href="/library">
                   <Button variant="ghost" size="sm">
                     View all
@@ -219,10 +222,10 @@ export default function DashboardPage() {
                       <Link key={p.id} href={`/watch/${p.id}`} className="block">
                         <div className="flex items-center gap-3 p-2 rounded-md hover:bg-accent/50 transition-colors">
                           <div className="flex-1 min-w-0">
-                            <p className="text-sm font-medium truncate">{p.title}</p>
-                            <p className="text-xs text-muted-foreground">{p.channelTitle}</p>
+                            <p className="text-base font-semibold text-slate-900 truncate">{p.title}</p>
+                            <p className="text-sm text-slate-700">{p.channelTitle}</p>
                           </div>
-                          <span className="text-xs font-medium shrink-0">{progress}%</span>
+                          <span className="text-sm font-semibold text-slate-900 shrink-0">{progress}%</span>
                         </div>
                       </Link>
                     )

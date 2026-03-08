@@ -50,25 +50,25 @@ export function StudentQuizInsights() {
   }, [attempts])
 
   return (
-    <Card>
+    <Card className="border-slate-300">
       <CardHeader className="pb-3">
-        <CardTitle className="text-base">Quiz Insights</CardTitle>
+        <CardTitle className="text-base font-semibold text-slate-900">Quiz Insights</CardTitle>
       </CardHeader>
       <CardContent className="space-y-3">
         <div className="grid grid-cols-2 gap-3">
-          <div className="rounded-md border p-3">
-            <p className="text-xs text-muted-foreground">Completed Quizzes</p>
-            <p className="text-xl font-semibold">{summary.total}</p>
+          <div className="rounded-md border border-slate-300 bg-white p-3">
+            <p className="text-xs text-slate-700">Completed Quizzes</p>
+            <p className="text-2xl font-bold text-slate-900">{summary.total}</p>
           </div>
-          <div className="rounded-md border p-3">
-            <p className="text-xs text-muted-foreground">Average Score</p>
-            <p className="text-xl font-semibold">{summary.avgPercent}%</p>
+          <div className="rounded-md border border-slate-300 bg-white p-3">
+            <p className="text-xs text-slate-700">Average Score</p>
+            <p className="text-2xl font-bold text-slate-900">{summary.avgPercent}%</p>
           </div>
         </div>
 
-        {loading ? <p className="text-sm text-muted-foreground">Loading quiz attempts...</p> : null}
+        {loading ? <p className="text-sm text-slate-700">Loading quiz attempts...</p> : null}
         {!loading && attempts.length === 0 ? (
-          <p className="text-sm text-muted-foreground">No completed quiz yet.</p>
+          <p className="text-sm text-slate-700">No completed quiz yet.</p>
         ) : null}
 
         {!loading && attempts.length > 0 ? (
@@ -76,12 +76,12 @@ export function StudentQuizInsights() {
             {attempts.slice(0, 6).map((attempt) => {
               const percent = Math.round((attempt.score / Math.max(1, attempt.totalQuestions)) * 100)
               return (
-                <div key={attempt.id} className="rounded-md border p-3">
-                  <p className="text-sm font-medium">{attempt.playlistTitle}</p>
-                  <p className="text-xs text-muted-foreground">
+                <div key={attempt.id} className="rounded-md border border-slate-300 bg-white p-3">
+                  <p className="text-sm font-semibold text-slate-900">{attempt.playlistTitle}</p>
+                  <p className="text-xs text-slate-700">
                     Score: {attempt.score}/{attempt.totalQuestions} ({percent}%)
                   </p>
-                  <p className="text-xs text-muted-foreground">
+                  <p className="text-xs text-slate-700">
                     {new Date(attempt.createdAt).toLocaleDateString()}
                   </p>
                 </div>
