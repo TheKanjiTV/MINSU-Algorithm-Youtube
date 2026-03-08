@@ -1,4 +1,4 @@
-# YT-Learn-MINSU
+# MINSU-ALGORITHM-YOUTUBE
 
 A Next.js learning platform that turns YouTube playlists into a guided course experience for students and professors.
 
