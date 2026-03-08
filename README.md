@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ![MIT License](https://img.shields.io/badge/license-MIT-green)
 # 🎓 YouTube Learning Platform
 
@@ -124,3 +125,6 @@ For any questions or feedback, feel free to reach out:
 If you found this project helpful, please give it a ⭐ on GitHub!
 
 
+=======
+# YT-Learn-MINSU
+>>>>>>> b1f5d19e81151a7be3dfb86eaa4875ffe462a49b
