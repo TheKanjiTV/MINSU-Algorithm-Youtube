@@ -32,7 +32,11 @@ export async function POST(request: Request) {
       message: "If the email exists, a reset code has been sent.",
     })
   } catch (error) {
-    const message = error instanceof Error ? error.message : "Failed to request password reset."
+    const rawMessage = error instanceof Error ? error.message : "Failed to request password reset."
+    const message =
+      /Invalid MongoDB URI|MONGODB_URI|ssl3_read_bytes|tlsv1 alert internal error/i.test(rawMessage)
+        ? "Password reset service is temporarily unavailable due to database configuration."
+        : rawMessage
     return NextResponse.json({ error: message }, { status: 500 })
   }
 }
