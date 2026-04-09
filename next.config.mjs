@@ -1,10 +1,5 @@
-import { fileURLToPath } from "url"
-
-const outputFileTracingRoot = fileURLToPath(new URL("../", import.meta.url))
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  outputFileTracingRoot,
   eslint: {
     ignoreDuringBuilds: true,
   },
