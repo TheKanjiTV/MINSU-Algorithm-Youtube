@@ -52,7 +52,10 @@ Welcome to **YouTube Learning Platform**, a structured and interactive way to le
    ```
 5. Run development server:
    ```bash
-   npm run dev
+   npm run build
+5. Start development server:
+   ```bash
+   npm start
    ```
 6. Open `http://localhost:3000`.
 
